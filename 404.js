@@ -1,4 +1,4 @@
-let api_req = 'https://api.giphy.com/v1/gifs/random?api_key=Ky9BnCVZJEm66SHxzCbdaipXuFpFPykF&tag=&rating=G';
+let api_req = 'https://api.giphy.com/v1/gifs/random?api_key=Ky9BnCVZJEm66SHxzCbdaipXuFpFPykF&tag=cat&rating=G';
                         let respObj;
                         let x = 1;
                         let xhttp = new XMLHttpRequest();
