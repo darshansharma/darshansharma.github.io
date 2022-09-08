@@ -1,6 +1,6 @@
 ---
 title="Why Rock Lee is the best character in The tail of Naruto Uzumaki?"
-slug="why-rock-lee-might-be-the-best-character-in-series?"
+slug="why-rock-lee-might-be-the-best-character-in-series"
 excerpt=""
 tags=["life", "anime", "spirtuality"]
 type="post"

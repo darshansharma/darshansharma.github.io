@@ -1,5 +1,5 @@
 ---
-title="Future of Jobs: My Take"
+title="Future of Jobs- My Take"
 slug="future-of-jobs"
 excerpt=""
 tags=["ai","tech","cosmos"]

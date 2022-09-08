@@ -1,6 +1,6 @@
 ---
 title="Why do I write?"
-slug="why-do-i-write?"
+slug="why-do-i-write"
 excerpt=""
 tags=["life"]
 type="post"

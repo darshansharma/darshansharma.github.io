@@ -1,6 +1,6 @@
 ---
-title="Curiousity: Are you curious?"
-slug="curiosity-are-you-curious?"
+title="Curiousity- Are you curious"
+slug="curiosity-are-you-curious"
 excerpt=""
 tags=["life"]
 type="post"

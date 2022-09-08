@@ -1,5 +1,5 @@
 ---
-title="Arch Linux: Reading the fine manual"
+title="Arch Linux- Reading the fine manual"
 slug="archlinux-read-the-fine-manual"
 excerpt=""
 tags=["tech","gnu/linux"]
