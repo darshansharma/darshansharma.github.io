@@ -1,0 +1,9 @@
+[user]
+name="Darshan Sharma"
+email="thedarshansharma@gmail.com"
+[site]
+name="Darshan Sharma - Product Manager • Blogger • Powerlifter. I talk about GNU/Linux, Web/Mobile App Development, Spirituality, Cosmos, Economics"
+description=""
+url="https://darshan.sh"
+[feed]
+add="""<p>Got comments? Send them to me via <a href='https://twitter.com/darshansharma_'>Twitter</a>.</p>"""

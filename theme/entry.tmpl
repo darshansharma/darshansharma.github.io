@@ -1,0 +1,100 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>{{entry.Title}}</title>
+<link rel="canonical" href="{{site.URL}}/{{entry.Slug}}">
+<meta property="og:url" content="{{site.URL}}/{{entry.Slug}}"/>
+<meta property="og:title" content="{{entry.Title}}"/>
+<meta property="og:description" content="{{entry.Excerpt}}"/>
+<meta property="og:type" content="article" />
+<meta name="description" content="{{entry.Excerpt}}"/>
+<meta name="twitter:title" content="{{entry.Title}}" />
+<meta name="twitter:description" content="{{entry.Excerpt}}" />
+{% if entry.FeaturedImage %}
+  <meta name="twitter:image" content="{{ entry.FeaturedImage }}" />
+  <meta property="og:image" content="{{ entry.FeaturedImage }}">
+{% else %}
+  <meta property="og:image" content="https://cdn.olai.in/jjude/jjude.jpg" />
+{% endif %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "{{entry.Title}}",
+      "url": "{{site.URL}}/{{entry.Slug}}",
+      "description": "{{entry.Excerpt}}",
+      "datePublished": "{{ entry.PublishAt | slice: ":9" }}",
+      {% if entry.FeaturedImage %}
+        "image": "{{entry.FeaturedImage}}",
+      {% else %}
+        "image": "https://cdn.olai.in/jjude/jjude.jpg",
+      {% endif %}
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+  <article class="pt3 pb3 bb b--moon-gray">
+    <div>
+      <div class="tc">        
+        <h1 class="mb1 mt1 f3 dark-gray">{{ entry.Title }}</h1>
+        <h3 class="ph3 ph5-ns fw3 georgia i">{{ entry.Excerpt }}</h3>
+      </div>
+      <div class="f4">
+         {{ entry.Content | safe }}
+
+         {% if entry.Type == "post" %}
+          <footer>          
+          <br/><b>Share this article</b> : 
+            <a href="https://twitter.com/intent/tweet?text={{entry.Title|urlencode}}&url={{site.URL|urlencode}}/{{entry.Slug|urlencode}}">Twitter</a> / 
+            <a href="http://www.linkedin.com/shareArticle?url={{site.URL|urlencode}}/{{entry.Slug|urlencode}}&title={{entry.Title|urlencode}}&source={{site.URL|urlencode}}">LinkedIn</a> / 
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{site.URL|urlencode}}/{{entry.Slug|urlencode}}&quote={{entry.Title|urlencode}}">Facebook</a> / 
+            <a href="https://api.whatsapp.com/send?text={{entry.Title|urlencode}}%3B%20Read%20At%20{{site.URL|urlencode}}/{{entry.Slug|urlencode}}">Whatsapp</a>
+          </p>
+          </footer>
+         {% endif %}
+      </div>
+    </div>
+    <small class="silver">Published On:
+      <time datetime="{{entry.PublishAt | slice: ":9"}}">
+      {{ entry.PublishAt | slice: ":9" }}
+      </time>
+    </small>
+    <br/>
+    {% if entry.Tags %}
+      <small class="silver">Under:
+        {% for tag in entry.Tags %}
+          <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
+          {% if not forloop.Last %}, {% endif %}
+        {% endfor %}
+      </small>
+    {% endif %}
+  </article>
+{% if entry.Type == "post" and site.MailchimpURL %}
+  <div class="pa4-l">
+    <form class="bg-near-white mw7 center pa4 br2-ns" action="{{site.MailchimpURL}}" method="POST">
+      <input type="hidden" name="u" value="{{ site.MailchimUID }}">
+      <input type="hidden" name="id" value="{{ site.MailchimAID }}">
+      <fieldset class="cf bn ma0 pa0">
+        <legend class="pa0 f5 f4-ns mb3 dark-gray">Each Wednesday, I send out an email with practical insights to build a thriving life and career.
+        <p>Enter your email below to get started.</p>
+        </legend>
+        <div class="cf"> 
+          <label class="clip" for="email-address">Email Address</label> 
+          <input
+            class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+            placeholder="mailme@domain.com" type="text" name="MERGE0" value="" id="MERGE0"> 
+            <input
+            class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+            type="submit" value="Subscribe"> 
+            </div>
+      </fieldset>
+    </form>
+  </div>
+{% endif %}
+{% endblock %}

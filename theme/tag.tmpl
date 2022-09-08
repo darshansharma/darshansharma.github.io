@@ -1,0 +1,60 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>All the articles I've written under {{ tag }}</title>
+<link rel="canonical" href="{{site.URL}}/tags/{{tag}}">
+<meta property="og:url" content="{{site.URL}}/tags/{{ tag }}"/>
+<meta property="og:title" content="All the articles I've written under {{ tag }}"/>
+<meta property="og:description" content="All the articles I've written under {{ tag }}"/>
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta property="og:type" content="website" />
+<meta name="description" content="All the articles I've written under {{ tag }}"/>
+<meta name="twitter:title" content="Posts at {{site.Name}} for {{ tag }}" />
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:description" content="All the articles I've written under {{ tag }}" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "All the articles I've written under {{ tag }}",
+      "url": "{{site.URL}}/tags/{{ tag }}",
+      "description": "All the articles I've written under {{ tag }}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+
+{% endblock %}
+
+{% block content %}
+<div class="tc">        
+  <h1 class="pt3 mb1 mt1 f3 black">Posts under "{{tag}}"</h1>
+</div>
+  {% for entry in entries %}
+      <article class="pa3 bb b--moon-gray">
+        <div>
+          <small>
+            <time datetime="{{entry.PublishAt | slice: ":9" }}" class="silver">
+              {{ entry.PublishAt | slice: ":9" }}
+            </time>
+          </small>
+            <p class="mb1 mt1 f4 black"><a href="{{site.URL}}/{{entry.Slug}}" target="_blank">{{entry.Title}}</a>
+            <span class="i"> - {{ entry.Excerpt }}&hellip;</span>
+            </p>
+
+        {% if entry.Tags %}
+          <small class="silver">
+            {% for tag in entry.Tags %}
+              <a href="{{site.URL}}/tags/{{tag}}" class="link" target="_blank">#{{tag}}</a>
+              {% if not forloop.Last %}, {% endif %}
+            {% endfor %}
+          </small>
+        {% endif %}
+        </div>
+      </article>
+  {% endfor %}
+{% endblock %}

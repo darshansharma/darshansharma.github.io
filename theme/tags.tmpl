@@ -1,0 +1,42 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>Topics at {{site.Name}}</title>
+<link rel="canonical" href="{{site.URL}}/tags">
+<meta property="og:url" content="{{site.URL}}/tags"/>
+<meta property="og:title" content="Topics at {{site.Name}}"/>
+<meta property="og:description" content="Topics at {{site.Name}}"/>
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="description" content="Topics at {{site.Name}}"/>
+<meta property="og:type" content="website" />
+<meta name="twitter:title" content="Tags for {{site.Name}}" />
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:description" content="Topics at {{site.Name}}" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "Topics at {{site.Name}}",
+      "url": "{{site.URL}}/tags",
+      "description": "Topics at {{site.Name}}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="tc">        
+  <h1 class="pt3 mb1 mt1 f3 black">All Tags</h1>
+</div>
+{% for tag in tags %}
+      {% if tag %}
+            <a id="title" href="{{site.URL}}/tags/{{tag}}/" target="_blank">{{tag}}</a> <br/>
+      {% endif %}
+{% endfor %}
+
+{% endblock %}

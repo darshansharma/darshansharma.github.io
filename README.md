@@ -1,3 +1,3 @@
-# Personal Website
+# olailite - Static blog generator written in Golang
 
-Source code of my website.
+Reads folder of markdown files (from `src`) and themes (`theme`) to generate html files into `public` folder.

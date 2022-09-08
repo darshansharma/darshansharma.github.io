@@ -1,0 +1,58 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>All posts at {{site.Name}}</title>
+<link rel="canonical" href="{{site.URL}}/posts/">
+<meta property="og:url" content="{{site.URL}}/posts/"/>
+<meta property="og:title" content="All posts at {{site.Name}}"/>
+<meta property="og:description" content="All posts at {{site.Description}}"/>
+<meta property="og:type" content=”website” />
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="description" content="All posts at {{site.Description}}"/>
+<meta name="twitter:description" content="All posts at {{site.Description}}" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "All posts at {{site.Name}}",
+      "url": "{{site.URL}}/posts/",
+      "description": "All posts at {{site.Description}}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="tc">        
+  <h1 class="pt3 mb1 mt1 f3 black">All Articles I've Written So Far...</h1>
+</div>
+  {% for entry in entries %}
+      <article class="pt3 pb3 bb b--moon-gray">
+        <div>
+          <small>
+            <time datetime="{{entry.PublishAt | slice: ":9" }}" class="silver">
+              {{ entry.PublishAt | slice: ":9" }}
+            </time>
+          </small>
+            <p class="mb1 mt1 f4 black">
+              <a href="/{{entry.Slug}}/" target="_blank" title="click to read {{entry.Slug}}">{{entry.Title}}</a>
+              <span class="i"> - {{ entry.Excerpt }}&hellip;</span>
+            </p>
+
+        {% if entry.Tags %}
+          <small class="silver">
+            {% for tag in entry.Tags %}
+              <a href="/tags/{{tag}}/" class="link" target="_blank" title="click to read all articles under {{tag}}">#{{tag}}</a>
+              {% if not forloop.Last %}, {% endif %}
+            {% endfor %}
+          </small>
+        {% endif %}
+        </div>
+      </article>
+  {% endfor %}
+{% endblock %}
