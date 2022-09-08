@@ -9,15 +9,18 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
+    - uses: actions/checkout@v2
+
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
         go-version: 1.14
-    - run: |
-        ./blog
-        gzip -k -9 $(find public -type f)
+
+    - name: Run go binary
+    - run: ./blog
+    
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
