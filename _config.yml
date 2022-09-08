@@ -9,23 +9,24 @@ on:
 jobs:
 
   build:
-    runs-on: macos-12
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-go@v3
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: Install Go lang
+      uses: actions/setup-go@v3
       with:
         go-version: 1.17.13
-
-    - name: Run-go-binary
+    - name: Build the content
       run: |
-         chmod +x blog
-         sh blog
+        ./blog
       shell: bash
-
-
-    - name: Archive production artifacts
-      uses: actions/upload-artifact@v3
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        name: dist-without-markdown
         path: public
+        FOLDER: public
+        BRANCH: master
             
