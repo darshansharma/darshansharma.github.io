@@ -31,7 +31,7 @@ jobs:
           go-version: 1.17.13
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Building the artifact
         run: pwd && chmod +x blog && ./blog
         
       - name: Upload a Build Artifact
