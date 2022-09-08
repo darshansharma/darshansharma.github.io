@@ -19,8 +19,12 @@ jobs:
         go-version: 1.14
 
     - name: Run go binary
-    - run: ./blog
-    
+      run: |
+         chmod +x blog
+         ./blog
+      shell: bash
+
+
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
