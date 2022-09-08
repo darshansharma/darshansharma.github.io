@@ -12,16 +12,14 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-
-    - name: Set up Go
-      uses: actions/setup-go@v3
+    - uses: actions/setup-go@v3
       with:
         go-version: 1.14
 
-    - name: Run go binary
+    - name: Run-go-binary
       run: |
          chmod +x blog
-         ./blog
+         sh blog
       shell: bash
 
 
