@@ -71,7 +71,7 @@
     <div class="flex flex-column">
       <div class="w-100 pr3-ns order-2 order-1-ns">
         <small>
-          <time datetime="{{ entry.PublishAt }}" class="silver">
+          <time datetime="{{entry.PublishAt | slice: ":11" }}" class="silver">
             {{ entry.PublishAt }}
           </time>
         </small>
