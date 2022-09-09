@@ -7,3 +7,4 @@ description=""
 url="https://darshan.sh"
 [feed]
 add="""<p>Got comments? Send them to me via <a href='https://twitter.com/darshansharma_'>Twitter</a>.</p>"""
+MailchimpURL="https://darshan.us18.list-manage.com/subscribe/"

@@ -1,0 +1,14 @@
+{
+    "eslint.codeActionsOnSave.rules": null,
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/*/*.tmpl": "django-html",
+        "*.tmpl": "django-html",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+     },
+     
+     "emmet.includeLanguages": {
+        "django-html": "html"
+     },
+
+}
