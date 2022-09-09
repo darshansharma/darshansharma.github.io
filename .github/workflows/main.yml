@@ -32,11 +32,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Building the artifact
-        run: chmod +x blog && ./blog && ls
+        run: chmod +x blog && ./blog && gzip -k -9 $(find public -type f)
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
           # Artifact name
           name: Web Build
-          path: public/index.html
+          path: public
