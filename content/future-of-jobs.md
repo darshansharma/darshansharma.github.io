@@ -1,11 +1,11 @@
 ---
 title="Future of Jobs- My Take"
 slug="future-of-jobs"
-excerpt=""
+excerpt="Wouldn’t it be ironic we come to cities in search of advanced life style and the same is culprit for our return to villages"
 tags=["ai","tech","cosmos"]
 type="post"
 publish_at="08 Dec 2020 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1_f4POM8DE8mJLcoVkqIp42Q.png?alt=media&token=0403f31c-1cd2-4fee-b73f-e87b35b9bd74"
+featured_image=""
 ---
 
 

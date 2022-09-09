@@ -1,11 +1,11 @@
 ---
 title="picam — Using raspberry pi camera module as home cctv"
 slug="picam-using-raspberry-camera-module-as-home-cctv"
-excerpt=""
+excerpt="I did this as I had very less time available to me otherwise I would’ve bought an static IP for myself and instead of using motion I would’ve created a script in python to upload the images to s3 bucket or maybe uploading those images to a external hdd/ssd shared through NAS."
 tags=["gnu/linux","tech"]
 type="post"
 publish_at="25 Apr 2022 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fpicam1.jpeg?alt=media&token=697b829d-0e12-4897-92d4-1dd83723c6ea"
+featured_image=""
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 title="Half day trip to Tikkar Taal"
 slug="half-day-trip-to-tikkar-taal"
-excerpt=""
+excerpt="The road which leads to destination is filled with more compassion than the destination itself and we enjoyed every part of it."
 tags=["life","travel"]
 type="post"
 publish_at="04 May 2022 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FPXL_20220430_015638273.jpeg?alt=media&token=071169ad-a4c3-41d5-81b2-f818d33a6fcf"
+featured_image=""
 ---
 
 We 3 friends decided on a Friday night to visit Morni Hills and Tikkar Taal on next morning. Since it was summer season so that's why we decided to leave at 5AM.

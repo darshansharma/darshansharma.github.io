@@ -5,7 +5,7 @@ excerpt=""
 tags=["app","tech"]
 type="post"
 publish_at="28 Apr 2021 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1_OOkjCThzct47yIpOOzPfow.png?alt=media&token=951c2556-8dcb-4033-9eb7-7e8dedf9e90c"
+featured_image=""
 ---
 
 Hi I am Darshan. Like many people I spent (not waste 😂 ) too much time on Instagram reels. I am very much into fitness and many fitness related videos comes into my feed so sometimes I want to download them.

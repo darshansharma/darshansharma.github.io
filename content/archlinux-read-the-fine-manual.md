@@ -1,11 +1,11 @@
 ---
 title="Arch Linux- Reading the fine manual"
 slug="archlinux-read-the-fine-manual"
-excerpt=""
+excerpt="I must say, I have seen a lot of things that took place during my college time (2014:2018) — like migration of people from lamp to mern, flipkart’s big billion day crash (rise of nodejs), onionIRC, downfall of Micromax and many more things."
 tags=["tech","gnu/linux"]
 type="post"
 publish_at="28 Jul 2022 04:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1658991179696.jpeg?alt=media&token=735909de-b800-4a0a-8e40-d8fd4a020719"
+featured_image=""
 ---
 
 ![btw i use arch](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1658991179696.jpeg?alt=media&token=735909de-b800-4a0a-8e40-d8fd4a020719 "btw i use arch image") 

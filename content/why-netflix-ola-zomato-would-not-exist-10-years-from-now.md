@@ -1,11 +1,11 @@
 ---
 title="Why Netflix, PayTm, Zomato, Uber, Ola, hotstar would not exist 10 years from now?"
 slug="why-netflix-ola-zomato-would-not-exist-10-years-from-now"
-excerpt=""
+excerpt="At the end content creators are kings/queens and the decider of their content distributor"
 tags=["life","tech"]
 type="post"
 publish_at="21 Aug 2022 12:00 IST"
-featured_image="https://miro.medium.com/max/1080/1*QJwc-yqEduaN7CG7s9VK8A.png"
+featured_image=""
 ---
 
 

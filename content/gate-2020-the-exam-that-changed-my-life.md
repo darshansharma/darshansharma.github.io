@@ -1,11 +1,11 @@
 ---
 title="Gate 2020: The exam that changed my life"
 slug="gate-2020-the-exam-that-changed-my-life"
-excerpt=""
+excerpt="So what if one may die because it’s the journey which leads to the destination is considered more important than the destination itself"
 tags=["life"]
 type="post"
 publish_at="22 Jul 2022 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2"
+featured_image=""
 ---
 
 Topic was permutations and combinations. Some of the students said sir we already know this topic and we have studied it in 11th standard. So why waste time on it? 

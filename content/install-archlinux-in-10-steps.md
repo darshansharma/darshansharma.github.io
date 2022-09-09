@@ -1,11 +1,11 @@
 ---
 title="Arch Linux: Install in 10 easy steps"
 slug="install-archlinux-in-10-steps"
-excerpt=""
+excerpt="It's just these 10 steps"
 tags=["gnu/linux","tech"]
 type="post"
 publish_at="03 Sep 2022 12:00 IST"
-featured_image="https://miro.medium.com/max/1400/1*0_D6_QskwO3CiO5Dd69ypw.png"
+featured_image=""
 ---
 Order —
 

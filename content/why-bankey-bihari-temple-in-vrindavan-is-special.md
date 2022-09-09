@@ -5,7 +5,7 @@ excerpt="Once a man asked buddha what is there at the end of suffering? Buddha r
 tags=["travel","life", "spirituality"]
 type="post"
 publish_at="26 Apr 2022 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1_oVTFEB11ElRT8hQrKaHYtw.jpeg?alt=media&token=1e67829c-1275-42d2-aa68-5915f6d04dce"
+featured_image=""
 ---
 
 

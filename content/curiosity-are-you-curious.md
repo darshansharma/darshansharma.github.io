@@ -1,7 +1,7 @@
 ---
 title="Curiousity- Are you curious"
 slug="curiosity-are-you-curious"
-excerpt=""
+excerpt="Sometimes, what we try to avoid lead us to very same place we are trying to avoid"
 tags=["life"]
 type="post"
 publish_at="08 Aug 2022 11:00 IST"

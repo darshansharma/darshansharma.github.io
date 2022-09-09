@@ -5,7 +5,7 @@ excerpt=""
 tags=["life"]
 type="post"
 publish_at="27 Feb 2017 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fimg1-jackof-all.png?alt=media&token=1900df3f-42eb-48c0-9632-e4d4680e8a50"
+featured_image=""
 ---
 
 Yes you read it right jack of all trades and master of none — this is a famous figure of speech which means that you are dabble (knows something something) in many things but don’t have expertise over a single one.

@@ -1,11 +1,11 @@
 ---
 title="Why do I write?"
 slug="why-do-i-write"
-excerpt=""
+excerpt="Someone asked me today, why do you write? Isn’t there enough dirt already on internet?"
 tags=["life"]
 type="post"
 publish_at="28 Jul 2022 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fzomato-boy-funny.png?alt=media&token=4db5d1ea-99e5-496d-8535-e0b8cabcd7cf"
+featured_image=""
 ---
 
  It’s 6:39 PM here. I just came home from gym. [darshan.sh](https://darshan.sh) my website is down because of some firestore code which I changed earlier today. I think 40 or 50 chrome tabs are still open which consist of the research/blog posts I am doing right now but since I am using a m1 machine so I no longer feel that I need to close them to write this post. 

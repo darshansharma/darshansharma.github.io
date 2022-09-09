@@ -1,11 +1,13 @@
 ---
 title=" If money is not making you happy then you probably aren’t spending it right"
 slug=" if-money-is-not-making-you-happy-then-you-probably-are-not-spending-it-right"
-excerpt=""
+excerpt='''One day, my father, he told me, “Son, don’t let it slip away”  
+He took me in his arms, I heard him say  
+“When you get older your wild heart will live for younger days'''
 tags=["spirituality","life"]
 type="post"
 publish_at="07 Sep 2022 12:00 IST"
-featured_image="https://miro.medium.com/max/1080/1*lf432kOk7PBib6d3e1nTJQ.png"
+featured_image=""
 ---
 
 I was reading [Joseph Jude](https://jjude.com/money-buys-happiness/)”s article about happiness and then read this [research by Harvard](https://scholar.harvard.edu/files/danielgilbert/files/if-money-doesnt-make-you-happy.nov-12-20101.pdf) and it pointed 7 reasons a human with a regular income becomes happy when he focuses on —
