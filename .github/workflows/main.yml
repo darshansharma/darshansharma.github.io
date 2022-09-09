@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Building and Deployment of Web Pages
 
 # Controls when the workflow will run
 on:
@@ -32,17 +32,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Building the artifact
-        run: pwd && chmod +x blog && ./blog
+        run: chmod +x blog && ./blog
         
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3
         with:
           # Artifact name
           name: Web Build
-          path: public
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          FOLDER: public
-          BRANCH: master
+          path: public/index.html
