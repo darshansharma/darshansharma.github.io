@@ -1,0 +1,109 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>{{site.Name}}</title>
+<link rel="canonical" href="{{site.URL}}">
+<meta property="og:url" content="{{site.URL}}"/>
+<meta property="og:title" content="{{site.Name}}"/>
+<meta property="og:description" content="{{site.Description}}"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:title" content="{{site.Name}}" />
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="description" content="{{site.Description}}"/>
+<meta name="twitter:description" content="{{site.Description}}" />
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/87d70237bce6ca20bf2c26f18/c94215ceb342fe5fe5dc0c947.js");</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "{{site.Name}}",
+      "url": "{{site.URL}}",
+      "description": "{{site.Description}}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="center">
+  <header class="tc pv2 pv3-ns">
+    
+    <h1 class="dim black b f2 tc db mb3 mb4-ns">'''गुरू गोविन्द दोऊ खड़े, काके लागूं पांय।
+बलिहारी गुरू अपने गोविन्द दियो बताय।।'''</h1>
+<article>
+<div class="flex flex-column flex-row-ns">
+    <img src="http://ccet.ac.in/img/faculty-cse/rbpatel.jpg" class="br-100 pa1 h5 w5 ba b--black-10" alt="avatar">
+    <img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fanurag-porwal.jpeg?alt=media&token=9c29eeb0-215f-4883-8945-dcd4cba087dd" class="br-100 pa1 h5 w5 ba b--black-10" alt="avatar">
+    <img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fjoseph-jude.png?alt=media&token=ab16d267-c69e-4f44-9430-64874260187f" class="br-100 pa1 h5 w5 ba b--black-10" alt="avatar">
+</div>
+</article>
+  </header>
+
+  <article class="f4 lh-copy">      
+    <p>
+      <a href="https://github.com/darshansharma/resume/raw/master/resumeDarshanSharma.pdf">My resume - </a>
+    </p>
+  </article>
+</section>
+
+<section class="bt b--black-10 center">
+  <h2 class="tc dim black b f2">Latest Articles</h2>      
+  {% for entry in entries |slice:":4" %}
+
+  <article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column">
+      <div class="w-100 pr3-ns order-2 order-1-ns">
+        <small>
+          <time datetime="{{entry.PublishAt | slice: ":11" }}" class="silver">
+            {{ entry.PublishAt }}
+          </time>
+        </small>
+        <a href="{{site.URL}}/{{entry.Slug}}" target="_blank" class="link">
+          <h2 class="f3 mt0 lh-title">{{entry.Title}}</h2>
+        </a>
+        <p class="f5 f4-l lh-copy">
+          {{ entry.Excerpt }}&hellip;
+        </p>
+      </div>
+    </div>   
+    <small class="silver">
+      {% for tag in entry.Tags %}
+        <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
+        {% if not forloop.Last %}, {% endif %}
+      {% endfor %}
+    </small>
+  </article>
+  {% endfor %}
+  </section>
+<section class="pa4-l">
+      <form class="bg-near-white mw7 center pa4 br2-ns" action="{{site.MailchimpURL}}" method="POST">
+      <input type="hidden" name="u" value="{{ site.MailchimpUID }}">
+      <input type="hidden" name="id" value="{{ site.MailchimpAID }}">
+      <fieldset class="cf bn ma0 pa0">
+        <p>Enter your email below to get started.</p>
+        </legend>
+        <div class="cf"> 
+          <label class="clip" for="email-address">Email Address</label> 
+          <input
+            class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+            placeholder="mailme@domain.com" type="text" name="MERGE0" value="" id="MERGE0"> 
+            <input
+            class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+            type="submit" value="Subscribe"> 
+            </div>
+      </fieldset>
+    </form>
+</section>
+
+<section class="bt b--black-10 center lh-copy">
+</section>
+
+
+{% endblock %}
