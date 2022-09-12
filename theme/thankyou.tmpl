@@ -1,0 +1,75 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>{{site.Name}}</title>
+<link rel="canonical" href="{{site.URL}}">
+<meta property="og:url" content="{{site.URL}}"/>
+<meta property="og:title" content="{{site.Name}}"/>
+<meta property="og:description" content="{{site.Description}}"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:title" content="{{site.Name}}" />
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="description" content="{{site.Description}}"/>
+<meta name="twitter:description" content="{{site.Description}}" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "{{site.Name}}",
+      "url": "{{site.URL}}",
+      "description": "{{site.Description}}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="center">
+  <header class="tc pv2 pv3-ns">
+    <h3 class="dim black b f2 tc db mb3 mb4-ns">Thank you for subscribing :)</h3>
+<article>
+<p>You can unsubscribe any time from selecting the unsubscribe button in your email in the footer</p>
+</section>
+
+<section class="bt b--black-10 center">
+  <h2 class="tc dim black b f2">Latest Articles</h2>      
+  {% for entry in entries |slice:":4" %}
+
+  <article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column">
+      <div class="w-100 pr3-ns order-2 order-1-ns">
+        <small>
+          <time datetime="{{entry.PublishAt | slice: ":11" }}" class="silver">
+            {{ entry.PublishAt }}
+          </time>
+        </small>
+        <a href="{{site.URL}}/{{entry.Slug}}" target="_blank" class="link">
+          <h2 class="f3 mt0 lh-title">{{entry.Title}}</h2>
+        </a>
+        <p class="f5 f4-l lh-copy">
+          {{ entry.Excerpt }}&hellip;
+        </p>
+      </div>
+    </div>   
+    <small class="silver">
+      {% for tag in entry.Tags %}
+        <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
+        {% if not forloop.Last %}, {% endif %}
+      {% endfor %}
+    </small>
+  </article>
+  {% endfor %}
+  </section>
+  
+<section class="bt b--black-10 center lh-copy">
+</section>
+
+
+{% endblock %}
