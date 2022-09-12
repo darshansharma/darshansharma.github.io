@@ -74,33 +74,34 @@
   </article>
   {% endfor %}
   </section>
-{% comment %} <section class="pa4-l">
-      <form class="bg-near-white mw7 center pa4 br2-ns" action="{{site.MailchimpURL}}" method="POST">
+<section class="pa4-l" id="subscription-sections">
+      <form class="bg-near-white mw7 center pa4 br2-ns" action="https://darshan.us18.list-manage.com/subscribe/post?u=87d70237bce6ca20bf2c26f18&amp;id=d34abf1ebe&amp;f_id=00f914e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
       <input type="hidden" name="u" value="{{ site.MailchimpUID }}">
       <input type="hidden" name="id" value="{{ site.MailchimpAID }}">
+      <div hidden="true"><input type="hidden" name="tags" value="2628794"></div>
+      <div id="mce-responses" class="clear foot">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
       <fieldset class="cf bn ma0 pa0">
-        <p>Enter your email below to get started.</p>
+        <p>Subscribe</p>
         </legend>
         <div class="cf"> 
-          <label class="clip" for="email-address">Email Address</label> 
-          <input
-            class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
-            placeholder="mailme@domain.com" type="text" name="MERGE0" value="" id="MERGE0"> 
-            <input
-            class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
-            type="submit" value="Subscribe"> 
+          <label class="clip" for="email-address">Email Address</label>
+          <input class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+            type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+            <input class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+              type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
             </div>
       </fieldset>
     </form>
-</section> {% endcomment %}
-
+</section>
+{% comment %} 
 <!-- Begin Mailchimp Signup Form -->
 <section class="pa4-l">
 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup">
     <form action="https://darshan.us18.list-manage.com/subscribe/post?u=87d70237bce6ca20bf2c26f18&amp;id=d34abf1ebe&amp;f_id=00f914e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
@@ -128,7 +129,7 @@
     </div>
 </form>
 </div>
-</section>
+</section> {% endcomment %}
 <!--End mc_embed_signup-->
 
 <section class="bt b--black-10 center lh-copy">
