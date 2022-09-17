@@ -1,3 +1,12 @@
+---
+title="Rose or Lotus - Are both same?"
+slug="rose-vs-lotus"
+excerpt="This quote was engraved in my heart that day. And till day, whenever I feel inferior to anyone — this quote comes from my unconscious mind and reaches to the top of my conscious mind and removes all the hatred/jealousy."
+tags=["life", "spirtuality", "growth"]
+type="post"
+publish_at="17 Sep 2022 11:38 IST"
+featured_image=""
+---
 
 I was reading [Joseph Jude]([https://jjude.com](https://jjude.com)) blogs when I stumbled upon a blog post in which he have written that once his friend said to him -
 
@@ -9,7 +18,7 @@ This took me back to my school days and I remember someone saying the same thing
 
 I was surprised that B was making my morale down when he should cheer me up but I think B was a realistic (one who is between optimistic and pessimistic) kind of person and he straight away said to me that. But the story doesn’t end here. He then said -
 
-> **” Perhaps you might become lower/poor in academics than them OR you might become better than them. But you can never become like them.”
+> **” Perhaps you might become lower/poor in academics than them OR you might become better than them. But you can never become like them.”**
 
 This quote was engraved in my heart that day. And till day, whenever I feel inferior to anyone — this quote comes from my unconscious mind and reaches to the top of my conscious mind and removes all the hatred/jealousy.
 
