@@ -1,7 +1,7 @@
 ---
 title="Why I hate algorithms?"
-slug="Winston Churchil once said that the democracy is the worst political system"
-excerpt=""
+slug="why-I-hate-algorihtm"
+excerpt="Winston Churchil once said that the democracy is the worst political system"
 tags=["life"]
 type="post"
 publish_at="16 Oct 2022 01:18 IST"
