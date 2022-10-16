@@ -4,7 +4,7 @@ slug="Winston Churchil once said that the democracy is the worst political syste
 excerpt=""
 tags=["life"]
 type="post"
-publish_at="16 Oct 2022 12:00:00 IST"
+publish_at="16 Oct 2022 01:18 IST"
 featured_image=""
 ---
 
