@@ -41,7 +41,10 @@ People will enjoy the best healthcare in the industry.
 But Morgan Housel has written in his book "The psychology of money" -
 
 ```
-It were the tails which impacted the our economy. It were the tail events where one event lead to another which leads to some other event which leads to some other even and then boom - 1980's recession, 2000 dot com bubble and 2008's recession. 
+It were the tails which impacted the our economy. 
+It were the tail events where one event lead to another which leads to some other event 
+which leads to some other even and then boom - 
+1980's recession, 2000 dot com bubble and 2008's recession. 
 Investors and hedge fund managers are very intelligent but they can't predict the tail events.
 ```
 
