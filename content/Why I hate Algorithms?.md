@@ -15,7 +15,7 @@ Democracy is worst because of the very same reason it is called good -
 
 > "Free Will"
 
-I am not intelligent enough to decide what decisions will make my country grow in the future. Neither were those Americans who voted for Trump. So, you see there is the problem - having equal voting rights does not necessarily mean we have the ability to make good decisions. Maybe Lincoln wouldn't know that with the help of big data and algorithms you can make fool of everyone, every time.
+I am not intelligent enough to decide what decisions will make my country grow in the future. Neither were those Americans who voted for Trump. So, you see there is the problem - having equal voting rights does not necessarily mean we have the ability to make good decisions. Maybe Lincoln wouldn't had  known that with the help of big data and algorithms you can make fool of everyone, every time.
 But we trust algorithms and big data and in near future, it might happen that we will use algorithms to make every decision in our life.
 
 ![lost path](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FScreenshot%202022-10-17%20at%201.07.58%20PM.png?alt=media&token=063d8335-e8f3-4ea7-8404-d31a00b9e80b)
@@ -35,7 +35,7 @@ Let the big data decide that for me
 
 Everyone is so much dependent on algorithms and big data that for every decision of our life - we would let algorithms decide for us because the algorithm knows us better than ourselves.
 
-Yuval Noah Harari writes in his book "21 lessons for the 21st century" -
+**Yuval Noah Harari** writes in his book *"21 lessons for the 21st century"* -
 
 ```
 Merger of InfoTech and BioTech will create a different world for us. 
@@ -45,7 +45,7 @@ Every disease will be curable - Alzihmer, cancer etc
 People will enjoy the best healthcare in the industry.
 ```
 
-But Morgan Housel has written in his book "The psychology of money" -
+But **Morgan Housel** has written in his book *"The psychology of money"* -
 
 ```
 It were the tails which impacted the our economy. 
