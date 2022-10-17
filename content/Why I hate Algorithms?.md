@@ -18,7 +18,7 @@ Democracy is worst because of the very same reason it is called good -
 I am not intelligent enough to decide what decisions will make my country grow in the future. Neither were those Americans who voted for Trump. So, you see there is the problem - having equal voting rights does not necessarily mean we have the ability to make good decisions. Maybe Lincoln wouldn't know that with the help of big data and algorithms you can make fool of everyone, every time.
 But we trust algorithms and big data and in near future, it might happen that we will use algorithms to make every decision in our life.
 
-[lost path] (https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FScreenshot%202022-10-17%20at%201.07.58%20PM.png?alt=media&token=063d8335-e8f3-4ea7-8404-d31a00b9e80b)!
+![lost path](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FScreenshot%202022-10-17%20at%201.07.58%20PM.png?alt=media&token=063d8335-e8f3-4ea7-8404-d31a00b9e80b)
 
 ```
 "Want to watch a "movie" - 
