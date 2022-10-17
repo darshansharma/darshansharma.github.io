@@ -19,11 +19,16 @@ I am not intelligent enough to decide what decisions will make my country grow i
 But we trust algorithms and big data and in near future, it might happen that we will use algorithms to make every decision in our life.
 
 ```
-"Want to watch a "movie" - Let NetFlix decide that for me
-"Want to watch a trending video" - Let Instagram, YouTube decide for me
-"Want to find a path to go somewhere" - Let Google Maps decide that for me
-"Want to find a life-partner" - Let the Big Data decide that for me
-"Want to choose what course to take in university"" - Let the big data decide that for me
+"Want to watch a "movie" - 
+Let NetFlix decide that for me
+"Want to watch a trending video" - 
+Let Instagram, YouTube decide for me
+"Want to find a path to go somewhere" - 
+Let Google Maps decide that for me
+"Want to find a life-partner" - 
+Let the Big Data decide that for me
+"Want to choose what course to take in university"" -  
+Let the big data decide that for me
 ```
 
 Everyone is so much dependent on algorithms and big data that for every decision of our life - we would let algorithms decide for us because the algorithm knows us better than ourselves.
@@ -42,10 +47,12 @@ But Morgan Housel has written in his book "The psychology of money" -
 
 ```
 It were the tails which impacted the our economy. 
-It were the tail events where one event lead to another which leads to some other event 
+It were the tail events where one event 
+lead to another which leads to some other event 
 which leads to some other even and then boom - 
 1980's recession, 2000 dot com bubble and 2008's recession. 
-Investors and hedge fund managers are very intelligent but they can't predict the tail events.
+Investors and hedge fund managers are very intelligent 
+but they can't predict the tail events.
 ```
 
 I feel that after a cycle of us depending so much on big data and algorithms there will come a time when only human beings will be left who doesn't get influenced by big data and algorithms and are enlighted like Buddha. Why? You may ask. Because that's what happened earlier. Survival of the fittest. These people will pass on their traits, and genes to their children. This new generation will not be getting affected by these algorithms and big data.
