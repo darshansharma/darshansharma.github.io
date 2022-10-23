@@ -1,11 +1,11 @@
 ---
-title=”3 Problems — 3 Solutions”  
-slug=”3-problems-3-solutions”  
-excerpt=”There are two things that are infinite — gravity around the black hole and human stupidity”  
-tags=[“life”, "world", "tech"]  
-type=”post”  
-publish_at=”23 Oct 2022 11:50 IST”  
-featured_image=”https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fgreg-rosenke-1TjORT2dLOw-unsplash.jpg?alt=media&token=b15010d1-3331-45b2-8835-04683511cebd”  
+title="3 Problems — 3 Solutions"
+slug="3-problems-3-solutions"
+excerpt="There are two things that are infinite — gravity around the black hole and human stupidity"
+tags=["life","world","tech"]
+type="post"
+publish_at="23 Oct 2022 11:50 IST"
+featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fgreg-rosenke-1TjORT2dLOw-unsplash.jpg?alt=media&token=b15010d1-3331-45b2-8835-04683511cebd"
 ---
 
 The 3 most severe problems the world is facing right now are —   
