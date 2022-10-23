@@ -8,7 +8,7 @@ publish_at=”22 Oct 2022 12:50:00 IST”
 featured_image=”https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fgreg-rosenke-1TjORT2dLOw-unsplash.jpg?alt=media&token=b15010d1-3331-45b2-8835-04683511cebd”  
 ---
 
-The 3 most prestigious problems the world is facing right now are —   
+The 3 most severe problems the world is facing right now are —   
 1. Human Evolution/Upgrade using Artificial Intelligence  
 2. Climate Change  
 3. Nuclear War
