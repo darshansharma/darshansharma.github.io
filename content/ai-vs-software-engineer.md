@@ -1,8 +1,8 @@
 ---
 title="AI - ChatGPT3 and you"
 slug="ai-vs-software-engineer"
-excerpt="What do we fear or have more philosophers debated over "AI will take human jobs"? But it is worse than that."
-tags=["life", "software"]
+excerpt="What do we fear or have more philosophers debated over 'AI will take human jobs'? But it is worse than that."
+tags=["life", "software", "ai"]
 type="post"
 publish_at="24 Dec 2022 10:00 IST"
 featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FWall-e%20lokking%20at%20gen-z.png?alt=media&token=b1e59b7a-14a7-4a12-a614-03c9c1e684e7"
