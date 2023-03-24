@@ -8,10 +8,6 @@ publish_at="17 Sep 2022 11:38 IST"
 featured_image=""
 ---
 
-I was reading [Joseph Jude]([https://jjude.com](https://jjude.com)) blogs when I stumbled upon a blog post in which he have written that once his friend said to him -
-
-> **You are superior to none, inferior to none**
-
 This took me back to my school days and I remember someone saying the same thing to me. The point is not that someone said the same to me, but this particular quote took me out of the chain of negative thought cycles from time to time. My version was a little bit different. I was taking coaching from Aakash Institue in sector 34 Chandigarh for the IIT entrance exam and I was in 10+1 standard back then. There, was this friend of mine (let's call him B). B had a nature of teasing me but deep down he always cared for me like a big brother. I was an average student and I used to get jealous of the toppers of our batch. I wanted to beat them in academics but they were born with the natural talent for problem-solving skills. One day frustrated, I asked B — How can I become like them? And then B said the most beautiful quote of my life -
 
 > **” You can never become like them”**

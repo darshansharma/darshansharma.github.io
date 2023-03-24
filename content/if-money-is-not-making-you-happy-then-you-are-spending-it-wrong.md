@@ -10,7 +10,7 @@ publish_at="07 Sep 2022 12:00 IST"
 featured_image=""
 ---
 
-I was reading [Joseph Jude](https://jjude.com/money-buys-happiness/)”s article about happiness and then read this [research by Harvard](https://scholar.harvard.edu/files/danielgilbert/files/if-money-doesnt-make-you-happy.nov-12-20101.pdf) and it pointed 7 reasons a human with a regular income becomes happy when he focuses on —
+I was [research by Harvard](https://scholar.harvard.edu/files/danielgilbert/files/if-money-doesnt-make-you-happy.nov-12-20101.pdf) reading article about happiness so and it pointed 7 reasons a human with a regular income becomes happy when he focuses on —
 
 1. Buying experiences v/s materialistic things  
 2. State of flow  
