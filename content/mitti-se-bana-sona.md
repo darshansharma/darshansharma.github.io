@@ -1,8 +1,7 @@
 ---
 title="Mitti se bana Sona"
 slug="mitti-se-bana-sona"
-excerpt="धन दौलत तो बहुत मांगते पर तू मांगना मिटटी से बना सोना  
-धन दौलत तो बहुत मांगते पर तू मांगना मिटटी से बना सोना"
+excerpt=""
 tags=["poem","spirtual"]
 type="post"
 publish_at="10 Mar 2023 04:00 IST"
