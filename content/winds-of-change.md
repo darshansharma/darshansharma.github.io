@@ -12,8 +12,6 @@ featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.app
 Kabir Das, an eminent philosopher and poet, has left an indelible mark on the world with his profound verses. While his brilliance is widely acknowledged, one can't help but wonder what his impact could have been if he had been born in the Western world. Nevertheless, today's rapidly evolving landscape offers exciting opportunities for creative individuals to express themselves and share their stories with the world. With the advent of generative AI and the accessibility of digital platforms, the barriers to entry have significantly diminished, empowering even a common individual with a laptop and internet connection to embark on remarkable creative journeys. In this blog post, we delve into the intersection of Kabir Das's wisdom, the transformative power of technology, and the future of creative endeavors.
 
 
-![Kabirdas-Image](./images/kabir-das.jpg "kabir-das")
-
 ## The Winds of Change:
 Kabir Das's verse, 
 <br>
@@ -37,7 +35,7 @@ Naval Ravikant, a prominent thinker, once discussed the future of jobs on a podc
 While the shift towards a project-based creative landscape may still be in its early stages, the trajectory is clear. As technology progresses, the barriers to entry will further erode, empowering individuals to contribute their unique talents to creative endeavors. The future promises a vibrant tapestry of collaborative projects, where storytellers, artists, musicians, and other creative professionals seamlessly come together to bring compelling narratives to life. This evolution not only democratizes creative expression but also fosters a sense of community and collective growth, where diverse perspectives converge to create something truly extraordinary.
 <br>
 
-![Kabirdas-Image](./images/man-robot.jpg "kabir-das")
+![robot-Image](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fman-robot.jpg?alt=media&token=f2097a98-f5c7-4aa1-83d2-487c3c737b39 "robot")
    
 ## Conclusion:
 Kabir Das's timeless wisdom continues to inspire and resonate with generations across the globe. As we embrace the winds of change, driven by the advancements in technology, we witness a remarkable shift in the creative landscape. The democratization of creative tools, coupled with the power of generative AI, empowers individuals to embark on creative journeys and share their unique stories with the world. Inspired by the Hollywood model, we are witnessing the rise of project-based collaborations that transcend borders and conventional constraints, ushering in a future where creativity knows no bounds. The journey ahead holds immense potential, and as we navigate this transformative era, we celebrate the convergence of ancient wisdom and cutting-edge innovation, ushering in a new paradigm of creative expression.
