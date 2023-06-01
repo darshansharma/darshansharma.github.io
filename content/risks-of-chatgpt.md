@@ -4,7 +4,7 @@ slug="risks-of-chatgpt"
 excerpt="Despite being trained on vast amounts of data, ChatGPT is still imperfect. Since it is a language model that has been trained rather than a human being capable of reasoning and evaluating the words they produce, ChatGPT lacks genuine cognitive engagement with the language it generates."
 tags=["ethics", "ai", "tech"]
 type="post"
-publish_at="10 May 2023 10:38 IST"
+publish_at="12 May 2023 10:38 IST"
 featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fchatgpt1.png?alt=media&token=8daf300b-02d1-489e-920d-ddfde23277fd"
 ---
 
