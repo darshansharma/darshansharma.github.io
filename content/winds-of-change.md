@@ -5,10 +5,8 @@ excerpt="In this blog post, we delve into the intersection of Kabir Das's wisdom
 tags=["life", "ai", "tech"]
 type="post"
 publish_at=01 Jun 2023 12:00 IST"
-featured_image="./images/man-robot.jpg"
+featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fman-robot.jpg?alt=media&token=f2097a98-f5c7-4aa1-83d2-487c3c737b39"
 ---
-
-
 
 # Introduction:
 Kabir Das, an eminent philosopher and poet, has left an indelible mark on the world with his profound verses. While his brilliance is widely acknowledged, one can't help but wonder what his impact could have been if he had been born in the Western world. Nevertheless, today's rapidly evolving landscape offers exciting opportunities for creative individuals to express themselves and share their stories with the world. With the advent of generative AI and the accessibility of digital platforms, the barriers to entry have significantly diminished, empowering even a common individual with a laptop and internet connection to embark on remarkable creative journeys. In this blog post, we delve into the intersection of Kabir Das's wisdom, the transformative power of technology, and the future of creative endeavors.
