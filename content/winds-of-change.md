@@ -4,7 +4,7 @@ slug="winds-of-change"
 excerpt="In this blog post, we delve into the intersection of Kabir Das's wisdom, the transformative power of technology, and the future of creative endeavors."
 tags=["life", "ai", "tech"]
 type="post"
-publish_at=01 Jun 2023 12:00 IST"
+publish_at=01 Jun 2023 11:00 IST"
 featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fman-robot.jpg?alt=media&token=f2097a98-f5c7-4aa1-83d2-487c3c737b39"
 ---
 
