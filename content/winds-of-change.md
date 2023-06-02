@@ -16,8 +16,8 @@ Kabir Das, an eminent philosopher and poet, has left an indelible mark on the wo
 Kabir Das's verse, 
 <br>
 
->धीरे-धीरे रे मना, धीरे सब कुछ होय, <br>
->माली सींचे सौ घड़ा, ॠतु आए फल होय |
+**धीरे-धीरे रे मना, धीरे सब कुछ होय, <br>
+माली सींचे सौ घड़ा, ॠतु आए फल होय |**
 
 <br>
 reminds us of the gentle yet unstoppable nature of change. Just as the seasons change gradually, the world around us is evolving at an unprecedented pace. Two years ago, only streaming giants like Netflix and Amazon Prime could produce high-budget content like "Sacred Games" and "The Family Man," involving substantial investments. However, today, the landscape has shifted. The emergence of generative AI and the democratization of creative tools have unlocked the potential for anyone with a good story to create impactful content. The barriers that once restricted creative expression are crumbling, paving the way for a diverse range of voices to flourish.
