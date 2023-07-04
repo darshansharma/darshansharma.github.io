@@ -1,7 +1,7 @@
 ---
 title="Aurangzeb vs Macaulay"
 slug="aurangzeb-vs-macaulay"
-excerpt="If you have a gun with only one bullet and I somehow managed to sent you back in past who would you like to kill?"
+excerpt="If you have a gun with only one bullet and I somehow managed to send you back in the past whom would you like to kill?"
 tags=["life", "politics"]
 type="post"
 publish_at="02 Jul 2023 10:00 IST"
@@ -28,7 +28,7 @@ Other wiped out the scientific knowledge and put down a barrier for people with 
 
 !["Aurangzeb vs Macaulay image"](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FAurangzeb-vs-Macaulay.jpeg?alt=media&token=f32923b5-cc4f-49ee-b605-ce698801aabb)
 
->If you have a gun with only one bullet and I somehow managed to sent you back in past who would you like to kill?
+>If you have a gun with only one bullet and I somehow managed to send you back in the past whom would you like to kill?
 
 <br>
 
