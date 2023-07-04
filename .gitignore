@@ -8,5 +8,7 @@ remark.md
 utils
 go.sum
 go.mod
+main.py
+requirments.txt
 commento.md
 content/.obsidian
