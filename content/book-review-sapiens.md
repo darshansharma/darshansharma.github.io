@@ -18,13 +18,16 @@ featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.app
 What do you want to want?" This single question stayed with me as I turned the last page of [Sapiens](https://amzn.to/3PYzrLW). The book had been sitting on my shelf for a year, silently challenging me to dive into its depths. And dive I did, on the 25th of August this year.
 
 
-![Sapiens](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fsapiens-cover-img.jpeg?alt=media&token=04bbf3eb-5dd7-4120-90d3-3643faedad9e&_gl=1*106f216*_ga*MTU4ODE2MDM1Mi4xNjk2MzA4NTM5*_ga_CW55HF8NVT*MTY5NjMwODUzOS4xLjEuMTY5NjMwODk0OS45LjAuMA..
- =x250)
+<div style="text-align: center;">
+<a href="https://amzn.to/3PYzrLW">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fsapiens-cover-img.jpeg?alt=media&token=04bbf3eb-5dd7-4120-90d3-3643faedad9e&_gl=1*106f216*_ga*MTU4ODE2MDM1Mi4xNjk2MzA4NTM5*_ga_CW55HF8NVT*MTY5NjMwODUzOS4xLjEuMTY5NjMwODk0OS45LjAuMA.." alt="Image Description" height="200">
+</a>
+</div>
 
 
 # 📖 My Reading Journey
 
-Committing to a reading routine can be challenging. My pact with myself? A minimum of 25 pages every day. Some days, the storyline was so gripping that the book practically turned its own pages.By committing to this simple routine, I finished the book on 3rd October. I was so inspired that I immediately decided to share my experience in this blog. 
+Committing to a reading routine can be challenging. My pact with myself? A minimum of 25 pages every day. Some days, the storyline was so gripping that the book practically turned its own pages.By committing to this simple routine, I finished the book on 2nd of October. I was so inspired that I immediately decided to share my experience in this blog. 
 
 > Fun Activity: How do you set reading goals for yourself? Do you have a unique routine? Drop your methods in the comments below!
 
@@ -55,5 +58,22 @@ Actually this is a feature provided by goodreads. So I like to keep track of my 
  I am pasting a link of my profile -    
 [Darshan Sharma profile](https://www.goodreads.com/user/show/66454282-darshan-sharma)
 
-If you are also a book reader or want to make a habit I recommend joining goodreads.
+If you are also a book reader or want to make a habit I recommend joining goodreads.   
+
+
+<div style="text-align: center;">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fneandarthal-meme.jpeg?alt=media&token=391c3bf7-a990-47c9-8d5c-27cf032def81&_gl=1*118ivhr*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjMxNDk5OC4xLjEuMTY5NjMxNTAyOC4zMC4wLjA." alt="Thinking" height="200">
+</div>
+
+
+Which book should I read next? I have already completed 2 from [Yuval Noah Harari](https://amzn.to/3Q3eLCB) only 1 is left.     
+Will tell you in next blog post.
+
+
+
+
+
+Now, I suppose it’s time I should put down my pen.
+
+
 
