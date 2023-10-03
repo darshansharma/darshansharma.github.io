@@ -2,8 +2,7 @@
 name="Darshan Sharma"
 email="thedarshansharma@gmail.com"
 [site]
-name="Darshan Sharma - CS Engineer • Blogger • Powerlifter. I talk about GNU/Linux, Web/Mobile App Development, Spirituality, Cosmos, Economics"
-description=""
+name="Darshan Sharma graduated with a Bachelors in Computer Science from Panjab University in 2018. Demonstrating his proficiency in the field, he achieved a commendable GATE rank of 1248. Over the past five years, Darshan has garnered significant expertise across a diverse range of software projects. Although his primary focus has been web and mobile app development, he possesses advanced knowledge in areas such as cloud computing, container technology, GNU/Linux operating systems, TCP/IP Stack, and system design. His prowess caught the attention of leading industry players, leading to a recruitment opportunity from Google in 2023."
 url="https://darshan.sh"
 [feed]
 add="""<p>Got comments? Send them to me via <a href='https://twitter.com/darshansharma_'>Twitter</a>.</p>"""
