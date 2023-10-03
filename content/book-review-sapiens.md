@@ -4,7 +4,7 @@ slug="book-review-sapiens"
 excerpt="What do you want to want?"
 tags=["life", "history", "non-fiction"]
 type="post"
-publish_at="03 Oct 2023 10:00 IST"
+publish_at="02 Oct 2023 10:00 IST"
 featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fsapiens-cover-img.jpeg?alt=media&token=04bbf3eb-5dd7-4120-90d3-3643faedad9e&_gl=1*106f216*_ga*MTU4ODE2MDM1Mi4xNjk2MzA4NTM5*_ga_CW55HF8NVT*MTY5NjMwODUzOS4xLjEuMTY5NjMwODk0OS45LjAuMA.."
 ---
 
@@ -18,8 +18,8 @@ featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.app
 What do you want to want?" This single question stayed with me as I turned the last page of [Sapiens](https://amzn.to/3PYzrLW). The book had been sitting on my shelf for a year, silently challenging me to dive into its depths. And dive I did, on the 25th of August this year.
 
 
-[![Sapiens](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fsapiens-cover-img.jpeg?alt=media&token=04bbf3eb-5dd7-4120-90d3-3643faedad9e&_gl=1*106f216*_ga*MTU4ODE2MDM1Mi4xNjk2MzA4NTM5*_ga_CW55HF8NVT*MTY5NjMwODUzOS4xLjEuMTY5NjMwODk0OS45LjAuMA..
- =x250)](https://amzn.to/3PYzrLW)
+![Sapiens](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fsapiens-cover-img.jpeg?alt=media&token=04bbf3eb-5dd7-4120-90d3-3643faedad9e&_gl=1*106f216*_ga*MTU4ODE2MDM1Mi4xNjk2MzA4NTM5*_ga_CW55HF8NVT*MTY5NjMwODUzOS4xLjEuMTY5NjMwODk0OS45LjAuMA..
+ =x250)
 
 
 # 📖 My Reading Journey
