@@ -9,8 +9,8 @@ featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.app
 ---
 
 
-**Book:** [Skin in the Game](https://amzn.to/3F90628)    
-**Author:** [Naseem Nicholas Talem](https://amzn.to/3F1MOor)       
+**Book:**  [ Skin in the Game](https://amzn.to/3F90628)    
+**Author:**  [ Naseem Nicholas Talem](https://amzn.to/3F1MOor)       
 **Started On:** 10 Sep 2023    
 **Completed On:** 03 Oct 2023   
 
@@ -37,17 +37,17 @@ Also, the use of probability theory by the author in stocks made me curious as h
 
 I am gonna end this review with some quotes that struck me the most.
 
->Don’t tell me what you think, tell me what you have in your portfolio
+> Don’t tell me what you think, tell me what you have in your portfolio
   
->What matters isn’t what a person has or doesn’t have; it is what he or she is afraid of losing.
+> What matters isn’t what a person has or doesn’t have; it is what he or she is afraid of losing.
   
->Courage is the only virtue you cannot fake.
+> Courage is the only virtue you cannot fake.
 
 >Those who talk should do and only those who do should talk.
 
 **The last and most important one for me -**
 
->You can define a free person precisely as someone whose fate is not centrally or directly dependent on peer assessment.
+> You can define a free person precisely as someone whose fate is not centrally or directly dependent on peer assessment.
 
 Now, I suppose it’s time I should put down my pen.
 
