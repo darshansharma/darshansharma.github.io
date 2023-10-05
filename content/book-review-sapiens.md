@@ -15,7 +15,7 @@ featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.app
 **Completed On:** 02 Oct 2023
 
 
-**There are no gods, no nations, no money and no human rights, except in our collective imagination**
+*There are no gods, no nations, no money and no human rights, except in our collective imagination.*
 
 This single quote stayed with me for very long time.    
 As I turned the last page of [Sapiens](https://amzn.to/3PYzrLW). The book had been sitting on my shelf for a year, silently challenging me to dive into its depths. And dive I did, on the 25th of August this year.
