@@ -44,12 +44,10 @@ One aspect of "Sapiens" that truly resonated with me was its exploration of the 
 
 ### 🚨 Spoiler Alert! 🚨
 
-> The author navigates the intricate tapestry of human history, tracing our journey from 10,000 years ago to the cutting-edge realm of genetic engineering in 2014. It’s very similar to a roller coaster ride through the sands of time.`    
-    
-> The author delves deep into the mighty empires that once shaped our world — from the magnificent empire of Rome, its influential leaders, to the imperial ambitions of the British Empire and Spain’s relentless drive for foreign treasures. This book doesn’t just recount historical events; it makes one reflect on the human spirit, our ambitions, and the lengths we go to realize our desires.` 
-              
-> A captivating read from start to finish, this book offers a seamless blend of history, culture, and science.Highly recommended for those keen on understanding the past to decode our present.`
-
+**The author navigates the intricate tapestry of human history, tracing our journey from 10,000 years ago to the cutting-edge realm of genetic engineering in 2014. It’s very similar to a roller coaster ride  through the sands of time.**    
+**The author delves deep into the mighty empires that once shaped our world — from the magnificent empire of Rome, its influential leaders, to the imperial ambitions of the British Empire and Spain’s relentless drive for foreign treasures.**   
+**This book doesn’t just recount historical events; it makes one reflect on the human spirit, our ambitions, and the lengths we go to realize our desires.A captivating read from start to finish, this book offers a seamless blend of history, culture, and science. Highly recommended for those keen on understanding the past to decode our present.**    
+     
 ## 📚 The Goodreads Journey
 
 The above review I also posted on good-reads. I mean the last para not the whole blog post obviously 😆.    
