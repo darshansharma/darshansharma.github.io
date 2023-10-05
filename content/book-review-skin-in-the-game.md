@@ -35,19 +35,19 @@ In a digital age where "new" is often mistaken for "better", let's not forget th
 
 Also, the use of probability theory by the author in stocks made me curious as he used mathematics for the prediction of tail events. He has also written a book [Fooled by Randomness](https://amzn.to/3F3Vhav). I am going to read that next. Why? Because I love mathematics.   
   
-`I am gonna end this review with some quotes that struck me the most.`   
+> I am gonna end this review with some quotes that struck me the most.   
    
-`Don’t tell me what you think, tell me what you have in your portfolio`    
+> Don’t tell me what you think, tell me what you have in your portfolio    
     
-`What matters isn’t what a person has or doesn’t have; it is what he or she is afraid of losing.`    
+> What matters isn’t what a person has or doesn’t have; it is what he or she is afraid of losing.    
     
-`Courage is the only virtue you cannot fake.`    
+> Courage is the only virtue you cannot fake.    
     
-`Those who talk should do and only those who do should talk.`    
+> Those who talk should do and only those who do should talk.    
   
 **The last and most important one for me -**    
     
-`You can define a free person precisely as someone whose fate is not centrally or directly dependent on peer assessment.`    
+> You can define a free person precisely as someone whose fate is not centrally or directly dependent on peer assessment.    
     
 Now, I suppose it’s time I should put down my pen.
 
