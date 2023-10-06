@@ -1,0 +1,113 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>{{site.Name}}</title>
+<link rel="canonical" href="{{site.URL}}">
+<meta property="og:url" content="{{site.URL}}"/>
+<meta property="og:title" content="{{site.Name}}"/>
+<meta property="og:description" content="{{site.Description}}"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:title" content="{{site.Name}}" />
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="description" content="{{site.Description}}"/>
+<meta name="twitter:description" content="{{site.Description}}" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "{{site.Name}}",
+      "url": "{{site.URL}}",
+      "description": "{{site.Description}}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="center">
+  <header class="tc pv2 pv3-ns">
+    <h5 class="dim black db mb4-ns">Books I have read - </h5>
+    
+<article>
+<div class="pa3 pa4-ns bb flex flex-column flex-row-ns">
+
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fwings-of-fire.png?alt=media&token=b71bbb7f-cccf-43c6-9ea8-fc7fdc44e1f7&_gl=1*pxz9uf*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTc1MS4yLjAuMA.." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fthe-power-of-now.png?alt=media&token=fb3e7fa5-74d8-4ed3-a5e4-20a5e281973f&_gl=1*1jeoras*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTc4MC42MC4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Flet's-talk-money.png?alt=media&token=583d896a-8c72-4694-aea4-a68f586aa6ed&_gl=1*112hfsz*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTc5Ny40My4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fskin-in-the-game-123.png?alt=media&token=2848fbc5-f299-4939-8902-0f66cf427e80&_gl=1*1acgr1i*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTg1MC42MC4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fsapiens.png?alt=media&token=9be12b54-9ee7-4b08-89f2-07a31cf182f5&_gl=1*111cyqi*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTg2Ny40My4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fstay-hungry-stay-foolish.png?alt=media&token=17c49aa5-477c-4524-8e7f-f2004c3afac7&_gl=1*33cnei*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTg4Ni4yNC4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fhow-to-talk-to-kids.png?alt=media&token=5732c3ff-3dc2-455e-a0f3-59deb64f81d9&_gl=1*1e1tv4j*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTkyMS42MC4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fconnecting-the-dots.png?alt=media&token=b8a7aae9-f35e-4d82-8b6a-3ff5f719b0d2&_gl=1*1fqrly3*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTkzNy40NC4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fthe-power-of-your-subconscious-mind.png?alt=media&token=dab4af07-e526-4192-874f-62b5225d136a&_gl=1*1wb86z9*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MTk1Ny4yNC4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fmeditations.png?alt=media&token=db204a61-f239-43a8-8dc8-fb97597f2845&_gl=1*1nsxbsv*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MjAwMC40NS4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+<img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fkarma-yoga.png?alt=media&token=e8e4a95c-ef7c-46ec-92ab-7c2e99edf365&_gl=1*1kmlb6m*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3MTUxMy43LjEuMTY5NjU3MjAxOS4yNi4wLjA." class="br-100 ma1 h-20 w-20 ba b--black-10" alt="avatar">
+
+</div>
+</article>
+  </header>
+
+  
+</section>
+
+<section class="bt b--black-10 center">
+  <h2 class="tc dim black b f2">Latest Articles</h2>      
+  {% for entry in entries |slice:":4" %}
+
+  <article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column">
+      <div class="w-100 pr3-ns order-2 order-1-ns">
+        <small>
+          <time datetime="{{entry.PublishAt | slice: ":11" }}" class="silver">
+            {{ entry.PublishAt }}
+          </time>
+        </small>
+        <a href="{{site.URL}}/{{entry.Slug}}" target="_blank" class="link">
+          <h2 class="f3 mt0 lh-title">{{entry.Title}}</h2>
+        </a>
+        <p class="f5 f4-l lh-copy">
+          {{ entry.Excerpt }}&hellip;
+        </p>
+      </div>
+    </div>   
+    <small class="silver">
+      {% for tag in entry.Tags %}
+        <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
+        {% if not forloop.Last %}, {% endif %}
+      {% endfor %}
+    </small>
+  </article>
+  {% endfor %}
+  </section>
+{% comment %} <section class="pa4-l">
+      <form class="bg-near-white mw7 center pa4 br2-ns" action="{{site.MailchimpURL}}" method="POST">
+      <input type="hidden" name="u" value="{{ site.MailchimpUID }}">
+      <input type="hidden" name="id" value="{{ site.MailchimpAID }}">
+      <fieldset class="cf bn ma0 pa0">
+        <p>Enter your email below to get started.</p>
+        </legend>
+        <div class="cf"> 
+          <label class="clip" for="email-address">Email Address</label> 
+          <input
+            class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+            placeholder="mailme@domain.com" type="text" name="MERGE0" value="" id="MERGE0"> 
+            <input
+            class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+            type="submit" value="Subscribe"> 
+            </div>
+      </fieldset>
+    </form>
+</section> {% endcomment %}
+
+<section class="bt b--black-10 center lh-copy">
+</section>
+
+
+{% endblock %}

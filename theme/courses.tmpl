@@ -1,0 +1,117 @@
+{% extends "base.tmpl" %}
+
+{% block seo %}
+
+<title>{{site.Name}}</title>
+<link rel="canonical" href="{{site.URL}}">
+<meta property="og:url" content="{{site.URL}}"/>
+<meta property="og:title" content="{{site.Name}}"/>
+<meta property="og:description" content="{{site.Description}}"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:title" content="{{site.Name}}" />
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="description" content="{{site.Description}}"/>
+<meta name="twitter:description" content="{{site.Description}}" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "{{site.Name}}",
+      "url": "{{site.URL}}",
+      "description": "{{site.Description}}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="center">
+  <header class="tc pv2 pv3-ns">
+    
+    
+<article class="bg-white">
+<div class="vh-75 cover bg-center" style="background-image: url(http://mrmrs.github.io/photos/001.jpg);"></div>
+    <div class="ph4 ph5-m ph6-l">
+        <div class="pv5 f4 f2-ns measure center">
+            <h1 class="fw6 f1 fl w-100 black-70 mt0 mb3 avenir">Courses</h1>
+            <p class="db lh-copy black-70 serif fw1 mv0 f4 f3-m f2-l measure baskerville">
+                Courses on React Library, Javascript, Data Structures, Algorithms, Computer Networks will be launched very soon.
+            </p>
+        </div>
+        <div class="cf mw8 center">
+            <div class='fl w-33 w-50-m w-33-l pr2 pr2-l'>
+                <div class="pv6 cover bg-center" style="background: urlhttps://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fcorses2.gif?alt=media&token=862cd8ec-5f41-4c71-9ff9-cf72e5a6e603&_gl=1*ketylc*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3NDI4Ni44LjEuMTY5NjU3NDU1Mi40MS4wLjA.);"></div>
+            </div>
+            <div class='fl w-33 w-50-m w-33-l ph3 pr0-m ph3-l'>
+                <div class="pv6 cover bg-center" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fcoming-soon.webp?alt=media&token=c5b2e651-06fa-4e8a-a081-9b77574ac21c&_gl=1*l4obqt*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3NDI4Ni44LjEuMTY5NjU3NDM2Ni42MC4wLjA.);"></div>
+            </div>
+            <div class='fl w-33 w-100-m w-33-l pl2 pl0-m pl2-l mt4-m'>
+                <div class="pv6 cover bg-center" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fstay-tuned.webp?alt=media&token=4e299691-32cc-4d4e-b33b-ca41938d3932&_gl=1*1hvvbce*_ga*MjE0NzMyMTgzNS4xNjk2MzE0OTk4*_ga_CW55HF8NVT*MTY5NjU3NDI4Ni44LjEuMTY5NjU3NDM4Ni40MC4wLjA.);"></div>
+        </div>
+      </div>
+</div>
+</article>
+
+  </header>
+</section>
+
+<section class="bt b--black-10 center">
+  <h2 class="tc dim black b f2">Latest Articles</h2>      
+  {% for entry in entries |slice:":4" %}
+
+  <article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column">
+      <div class="w-100 pr3-ns order-2 order-1-ns">
+        <small>
+          <time datetime="{{entry.PublishAt | slice: ":11" }}" class="silver">
+            {{ entry.PublishAt }}
+          </time>
+        </small>
+        <a href="{{site.URL}}/{{entry.Slug}}" target="_blank" class="link">
+          <h2 class="f3 mt0 lh-title">{{entry.Title}}</h2>
+        </a>
+        <p class="f5 f4-l lh-copy">
+          {{ entry.Excerpt }}&hellip;
+        </p>
+      </div>
+    </div>   
+    <small class="silver">
+      {% for tag in entry.Tags %}
+        <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
+        {% if not forloop.Last %}, {% endif %}
+      {% endfor %}
+    </small>
+  </article>
+  {% endfor %}
+  </section>
+{% comment %} <section class="pa4-l">
+      <form class="bg-near-white mw7 center pa4 br2-ns" action="{{site.MailchimpURL}}" method="POST">
+      <input type="hidden" name="u" value="{{ site.MailchimpUID }}">
+      <input type="hidden" name="id" value="{{ site.MailchimpAID }}">
+      <fieldset class="cf bn ma0 pa0">
+        <p>Enter your email below to get started.</p>
+        </legend>
+        <div class="cf"> 
+          <label class="clip" for="email-address">Email Address</label> 
+          <input
+            class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+            placeholder="mailme@domain.com" type="text" name="MERGE0" value="" id="MERGE0"> 
+            <input
+            class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+            type="submit" value="Subscribe"> 
+            </div>
+      </fieldset>
+    </form>
+</section> {% endcomment %}
+
+<section class="bt b--black-10 center lh-copy">
+</section>
+
+
+{% endblock %}
