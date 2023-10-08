@@ -1,0 +1,40 @@
+{% block seo %}
+
+<title>{{site.Name}}</title>
+<link rel="canonical" href="{{site.URL}}">
+<meta property="og:url" content="{{site.URL}}"/>
+<meta property="og:title" content="{{site.Name}}"/>
+<meta property="og:description" content="{{site.Description}}"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:title" content="{{site.Name}}" />
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="description" content="{{site.Description}}"/>
+<meta name="twitter:description" content="{{site.Description}}" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+      "headline": "{{site.Name}}",
+      "url": "{{site.URL}}",
+      "description": "{{site.Description}}",
+      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "author": {
+        "@type": "Person",
+        "name": "{{user.Name}}"
+      }
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+<section class="center">
+    <h2>Contact Us</h2>
+    <span>
+        Merchant Legal entity name: DARSHAN SHARMA
+        Registered Address: J803 Jalvayu Tower, Sector 4B, Shatabdi Nagar Meerut UTTAR PRADESH 250103
+        Telephone No:
+        E-Mail ID: thedarshansharma@gmail.com
+    </span>
+</section>
+{% endblock %}
