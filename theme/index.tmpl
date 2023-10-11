@@ -30,46 +30,63 @@
 
   <script type="text/javascript">
 
-  function addEmail()
+  function addEmail(){
 
-  {
-    console.log('Sending your request to main server ...');
-    let userEmail = document.getElementById("email").value;
-  let data = JSON.stringify({
-    "email": userEmail
-  });
+    try{
+      
+      console.log('Sending your request to main server ...');
+      let userEmail = document.getElementById("email").value;
+      let data = JSON.stringify({
+        "email": userEmail
+      });
 
-  var xhr = new XMLHttpRequest();
-  
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://us-central1-darshansharma-ur.cloudfunctions.net/addEmail");
+      xhr.setRequestHeader("Content-Type", "application/json");
 
-  xhr.addEventListener("readystatechange", function() {
-  if(this.readyState === 4) {
-    console.log(this.responseText);
-    document.getElementById("success-response").style.visibility = "visible";
-    document.getElementById("success-response").style.color = "#00BF63";
-    document.getElementById("success-response").style.fontWeight = "bold";
-    document.getElementById("success-response").innerHTML = "Thanks for subscribing. You will enjoy it !!";
+      xhr.send(data);
+      xhr.addEventListener("readystatechange", function() {
+      if(this.readyState === 4) {
+    
+        document.getElementById("success-response").style.visibility = "visible";
+        document.getElementById("success-response").style.color = "#00BF63";
+        document.getElementById("success-response").style.fontWeight = "bold";
+        document.getElementById("success-response").innerHTML = "Thanks for subscribing. You will enjoy it !!";
     
   } else {
-    document.getElementById("success-response").style.visibility = "visible";
-    document.getElementById("success-response").style.color = "#E86D79";
-    document.getElementById("success-response").style.fontWeight = "bold";
-    document.getElementById("error-response").innerHTML = "Please try some time later. Some problem with server";
+        document.getElementById("success-response").style.visibility = "visible";
+        document.getElementById("success-response").style.color = "#E86D79";
+        document.getElementById("success-response").style.fontWeight = "bold";
+        document.getElementById("error-response").innerHTML = "Please try some time later. Some problem with server";
     
   }
-});
 
-setTimeout(() => {
-  document.getElementById("email").value = "";
-  document.getElementById("success-response").style.visibility = "hidden";
-  document.getElementById("error-response").style.visibility = "hidden";
+  setTimeout(() => {
+    document.getElementById("email").value = "";
+    document.getElementById("success-response").style.visibility = "hidden";
+    document.getElementById("error-response").style.visibility = "hidden";
 
 },5000);
 
-  xhr.open("POST", "https://us-central1-darshansharma-ur.cloudfunctions.net/addEmail");
-  xhr.setRequestHeader("Content-Type", "application/json");
+});
 
-  xhr.send(data);
+    
+    }
+
+    catch(err) {
+      document.getElementById("success-response").style.visibility = "visible";
+      document.getElementById("success-response").style.color = "#E86D79";
+      document.getElementById("success-response").style.fontWeight = "bold";
+      document.getElementById("error-response").innerHTML = "Please try again later.";
+
+      setTimeout(() => {
+      document.getElementById("email").value = "";
+      document.getElementById("success-response").style.visibility = "hidden";
+      document.getElementById("error-response").style.visibility = "hidden";
+
+    },5000);
+    }
+
     }
   
 
@@ -105,7 +122,7 @@ setTimeout(() => {
           </time>
         </small>
         <a href="{{site.URL}}/{{entry.Slug}}" target="_blank" class="link">
-          <h2 class="f3 mt0 lh-title">{{entry.Title}}</h2>
+          <h2 class="f3 mt0 black lh-title">{{entry.Title}}</h2>
         </a>
         <p class="f5 f4-l lh-copy">
           {{ entry.Excerpt }}&hellip;

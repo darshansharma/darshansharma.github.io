@@ -36,6 +36,37 @@
       }
   }
 </script>
+<script type="application/javascript">
+
+  function storeComment () {
+    console.log("Storing comment.....");
+    try{
+      const commentTime = new Date().toString();
+      const commentUserName = document.getElementById("user-name").value;
+      const comment = document.getElementById("comment").value;
+      const commentMetadata = {
+        time: commentTime,
+        name: commentUserName,
+        comment,
+      };
+      console.log(commentMetadata);
+      document.getElementById("post-btn").innerHTML="Comment added";
+      document.getElementById("post-btn").style.backgroundColor="#00BF63";
+    }
+  catch(err) {
+    document.getElementById("post-btn").innerHTML="Something went wrong";
+      document.getElementById("post-btn").style.backgroundColor="red";
+  }    
+    setTimeout(function (){
+      document.getElementById("user-name").value="";
+      document.getElementById("comment").value="";
+      document.getElementById("post-btn").innerHTML="Post";
+      document.getElementById("post-btn").style.backgroundColor="black";
+    },5000);
+  }
+
+</script>
+
 {% endblock %}
 
 {% block content %}
@@ -45,9 +76,25 @@
         <h1 class="mb1 mt1 f3 dark-gray">{{ entry.Title }}</h1>
         <h3 class="ph3 ph5-ns fw3 georgia i">{{ entry.Excerpt }}</h3>
       </div>
+  </div>
       <div class="f4">
          {{ entry.Content | safe }}
-
+          <form class="bg-near-white mw7 center pa4 br2-ns">
+        <p>Comment Here
+          <span class="normal black-60">
+                    (optional)
+          </span>
+        </p>
+        <div class="cf flex flex-column"> 
+          <input
+            class="bn fl ba black-80 bg-white pa3 lh-solid w-100 w-100 br2-ns br--left-ns mb3"
+            placeholder="Name" type="text" value="" id="user-name"> 
+            <textarea id="comment" placeholder="Write your comment here" name="comment" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb3" aria-describedby="comment-desc">
+            </textarea>
+              <a class="f6 link dim br3 pointer ph3 pv2 mb2 dib white bg-black" id="post-btn" onclick="storeComment()">Post</a>
+            </div>
+      </fieldset>
+    </form>
          {% if entry.Type == "post" %}
           <footer>          
           <br/><b>Share this article</b> : 
@@ -75,25 +122,5 @@
       </small>
     {% endif %}
   </article>
-{% if entry.Type == "post" and site.MailchimpURL %}
-  <div class="pa4-l">
-    <form class="bg-near-white mw7 center pa4 br2-ns" action="{{site.MailchimpURL}}" method="POST">
-      <input type="hidden" name="u" value="{{ site.MailchimUID }}">
-      <input type="hidden" name="id" value="{{ site.MailchimAID }}">
-      <fieldset class="cf bn ma0 pa0">
-        <p>Enter your email below to get started.</p>
-        </legend>
-        <div class="cf"> 
-          <label class="clip" for="email-address">Email Address</label> 
-          <input
-            class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
-            placeholder="mailme@domain.com" type="text" name="MERGE0" value="" id="MERGE0"> 
-            <input
-            class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
-            type="submit" value="Subscribe"> 
-            </div>
-      </fieldset>
-    </form>
-  </div>
-{% endif %}
+
 {% endblock %}
