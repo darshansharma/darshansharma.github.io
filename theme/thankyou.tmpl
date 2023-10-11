@@ -60,7 +60,7 @@
     </div>   
     <small class="silver">
       {% for tag in entry.Tags %}
-        <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
+        <a href="{{site.URL}}/tags/{{tag}}/" class="link">#{{tag}}</a>
         {% if not forloop.Last %}, {% endif %}
       {% endfor %}
     </small>

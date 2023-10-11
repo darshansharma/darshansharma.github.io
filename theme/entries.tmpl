@@ -40,14 +40,14 @@
             </time>
           </small>
             <p class="mb1 mt1 f4 black">
-              <a href="/{{entry.Slug}}/" target="_blank" title="click to read {{entry.Slug}}">{{entry.Title}}</a>
+              <a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}">{{entry.Title}}</a>
               <span class="i"> - {{ entry.Excerpt }}&hellip;</span>
             </p>
 
         {% if entry.Tags %}
           <small class="silver">
             {% for tag in entry.Tags %}
-              <a href="/tags/{{tag}}/" class="link" target="_blank" title="click to read all articles under {{tag}}">#{{tag}}</a>
+              <a href="/tags/{{tag}}/" class="link" title="click to read all articles under {{tag}}">#{{tag}}</a>
               {% if not forloop.Last %}, {% endif %}
             {% endfor %}
           </small>
