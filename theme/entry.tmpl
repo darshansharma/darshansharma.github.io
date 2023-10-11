@@ -107,14 +107,14 @@
          {% endif %}
       </div>
     </div>
-    <small class="silver">Published On:
+    <small class="black">Published On:
       <time datetime="{{entry.PublishAt | slice: ":11"}}">
       {{ entry.PublishAt | slice: ":11" }}
       </time>
     </small>
     <br/>
     {% if entry.Tags %}
-      <small class="silver">Under:
+      <small class="black">Under:
         {% for tag in entry.Tags %}
           <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
           {% if not forloop.Last %}, {% endif %}

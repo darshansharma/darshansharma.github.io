@@ -38,7 +38,7 @@
       <article class="pa3 bb b--moon-gray">
         <div>
           <small>
-            <time datetime="{{entry.PublishAt | slice: ":9" }}" class="silver">
+            <time datetime="{{entry.PublishAt | slice: ":9" }}" class="black">
               {{ entry.PublishAt | slice: ":9" }}
             </time>
           </small>
@@ -47,7 +47,7 @@
             </p>
 
         {% if entry.Tags %}
-          <small class="silver">
+          <small class="black">
             {% for tag in entry.Tags %}
               <a href="{{site.URL}}/tags/{{tag}}" class="link">#{{tag}}</a>
               {% if not forloop.Last %}, {% endif %}
