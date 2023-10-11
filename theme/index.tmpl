@@ -26,6 +26,37 @@
         "name": "{{user.Name}}"
       }
   }
+  </script>
+
+  <script type="text/javascript">
+  function addEmail()
+  {
+    let userEmail = document.getElementById("email");
+    if(!userEmail.toLowerCase().match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )) {
+      return;
+    }
+  let data = JSON.stringify({
+    "email": userEmail
+  });
+
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
+
+  xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+  xhr.open("POST", "https://us-central1-darshansharma-ur.cloudfunctions.net/addEmail");
+  xhr.setRequestHeader("Content-Type", "application/json");
+
+  xhr.send(data);
+    }
+  
+
 </script>
 {% endblock %}
 
@@ -75,7 +106,7 @@
   {% endfor %}
   </section>
 <section class="pa4-l" id="subscription-sections">
-      <form class="bg-near-white mw7 center pa4 br2-ns" action="https://us-central1-darshansharma-ur.cloudfunctions.net/addEmail" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+      <form class="bg-near-white mw7 center pa4 br2-ns" action="addEmail()" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
         <div class="response" id="mce-error-response" style="display:none"></div>
         <div class="response" id="mce-success-response" style="display:none"></div>
       </div>
