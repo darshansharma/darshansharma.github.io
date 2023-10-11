@@ -106,9 +106,9 @@
   {% endfor %}
   </section>
 <section class="pa4-l" id="subscription-sections">
-      <form class="bg-near-white mw7 center pa4 br2-ns" action="addEmail()" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
+      <form class="bg-near-white mw7 center pa4 br2-ns" action="addEmail()" method="post" id="subscribe-form" name="subscribe-form" class="validate" target="_self">
+        <div class="response" id="error-response" style="display:none"></div>
+        <div class="response" id="success-response" style="display:none"></div>
       </div>
       <fieldset class="cf bn ma0 pa0">
         <p>Subscribe</p>
@@ -118,7 +118,7 @@
           <input class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
             type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
             <input class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
-              type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              type="submit" value="Subscribe" name="subscribe" id="subscribe" class="button">
             </div>
       </fieldset>
     </form>
