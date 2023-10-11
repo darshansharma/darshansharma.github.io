@@ -29,14 +29,18 @@
   </script>
 
   <script type="text/javascript">
+
   function addEmail()
+
   {
+    console.log('h1');
     let userEmail = document.getElementById("email");
     if(!userEmail.toLowerCase().match(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     )) {
       return;
     }
+    console.log('h2');
   let data = JSON.stringify({
     "email": userEmail
   });
@@ -106,7 +110,7 @@
   {% endfor %}
   </section>
 <section class="pa4-l" id="subscription-sections">
-      <form class="bg-near-white mw7 center pa4 br2-ns" action="addEmail()" method="post" id="subscribe-form" name="subscribe-form" class="validate" target="_self">
+      <form class="bg-near-white mw7 center pa4 br2-ns" action="" method="post" id="subscribe-form" name="subscribe-form" class="validate" target="_self">
         <div class="response" id="error-response" style="display:none"></div>
         <div class="response" id="success-response" style="display:none"></div>
       </div>
@@ -118,7 +122,7 @@
           <input class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
             type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
             <input class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
-              type="submit" value="Subscribe" name="subscribe" id="subscribe" class="button">
+              type="submit" value="Subscribe" name="subscribe" id="subscribe" class="button" onClick="addEmail()">
             </div>
       </fieldset>
     </form>
