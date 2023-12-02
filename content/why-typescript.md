@@ -4,7 +4,7 @@ slug="why-typescript"
 excerpt=""
 tags=["tech", "javascript", "course"]
 type="post"
-publish_at="20 Nov 2023 11:00"
+publish_at="20 Nov 2023 11:00 IST"
 featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FTypeScript%20-%20photo.jpg?alt=media&token=0377a279-40a9-4ff5-bb75-4dbe3251d7e3"
 ---
 
