@@ -1,10 +1,10 @@
 ---
 title="Why TypeScript?"
 slug="why-typescript"
-excerpt="Brendan Eich who at that time worked at Sun MicroSystem thought why not make these checks at the user machine itself and we can save this round trip-time..."
+excerpt=""
 tags=["tech", "javascript", "course"]
 type="post"
-publish_at=20 Nov 2023 11:00"
+publish_at="20 Nov 2023 11:00"
 featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FTypeScript%20-%20photo.jpg?alt=media&token=0377a279-40a9-4ff5-bb75-4dbe3251d7e3"
 ---
 
@@ -18,7 +18,7 @@ All Frameworks that are built on top of Node.Js - Express.Js, Nest.Js or even if
 <img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FTypeScript%20-%20photo.jpg?alt=media" width="500" height="500" alt="TypeScript"/>
 
 
-Let me tell you little hory of JavaScript -> there are some bugs and issues which are left when JavaScript (initially named Mocha) was created in 1995 by the company Sun MicroSystem for their web browser NetScape Navigator (very famous at that time, like Google Chrome is now). They tried to remove a lot of them in the version ES6 (ECMAScript6) [do you know why they call it ECMAScript and not JavaScript officially? If not, try to find out]. Sun MicroSystem’s main business was to sell hardware, later they got into the soware business too.
+Let me tell you little hory of JavaScript -> there were some bugs and issues which are left when JavaScript (initially named Mocha) was created in 1995 by the company Sun MicroSystem for their web browser NetScape Navigator (very famous at that time, like Google Chrome is now). They tried to remove a lot of them in the version ES6 (ECMAScript6) [do you know why they call it ECMAScript and not JavaScript officially? If not, try to find out]. Sun MicroSystem’s main business was to sell hardware, later they got into the soware business too.
 <br>
 
 **Q - Why did they created JavaScript in the first place?** <br>
