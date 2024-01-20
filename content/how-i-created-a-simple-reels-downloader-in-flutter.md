@@ -28,16 +28,21 @@ Once I have download link then, everything was simple but when you copy reel lin
 
 I clicked on them and started looking at network tab to see and I found out that they were using instagram’s downloadable link which means instagram do provide downloadable but how was the question? So after searching a lot I found out a url which when hit returns graphQl data related to video in json format. I used 
 
-```String videoUrl = graphql[‘video_url’];```
+```
+String videoUrl = graphql[‘video_url’];
+
+```
 
  to get the actual downloadable link.\nOnce we have actual downloadable link we can use consolidateHttpClientResponseBytes() function in flutter which saves the response as a list of 8 bit unsigned integers which then can be written to a file.
     
- ```var request = await httpClient.getUrl(Uri.parse(url));```
-``` var response = await request.close();```
-``` var bytes = await consolidateHttpClientResponseBytes(response); ```
-``` file = File(filePath); ```
-``` await file.writeAsBytes(bytes);```
- 
+```
+var request = await httpClient.getUrl(Uri.parse(url));
+var response = await request.close();
+var bytes = await consolidateHttpClientResponseBytes(response);
+file = File(filePath);
+await file.writeAsBytes(bytes);
+
+``` 
  I hit the request and saved the response as bytes in a file and then write that file in internal storage of my device. If you are still confused about how unsigned 8 bit int is related to a video file then please read about [working with bytes in dart](https://medium.com/flutter-community/working-with-bytes-in-dart-6ece83455721)  
 
 App link — [https://play.google.com/store/apps/details?id=com.darshansharma.simple_reels_downloader](https://play.google.com/store/apps/details?id=com.darshansharma.simple_reels_downloader) 

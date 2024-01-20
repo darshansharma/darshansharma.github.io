@@ -103,41 +103,24 @@
   </header>
 
   <article class="f4 lh-copy">      
-    <p>
-      Who am I? I know this much that this is wrong question.<br />Right question is What am I?
-    </p>
+    <code>
+      अपि चेदसि पापेभ्य: सर्वेभ्य: पापकृत्तम: | 
+      सर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि || 
+    </code>
+    <br>
+    <code>
+    तो तुम भी ज्ञान की नौका में बैठकर पाप के सागर को पार कर जाओ । 
+    ये समझलो पार्थ जैसे अग्नि सब कुछ जला कर भस्म कर देती है, वैसे ही ज्ञान की अग्नि कर्म की इच्छा, 
+    कर्म के फल न मिलने पर आने वाले क्रोध और उस क्रोध से उत्पन हुए मोह को भस्म कर देती है । 
+    हे पार्थ इस मंत्र को हमेशा याद रखो इस संसार में ज्ञान के समान पवित्र करने वाली न कोई वस्तु है न कोई तत्त्व । 
+
+    English: Even those who are considered the most immoral of all sinners can cross 
+    over this ocean of material existence by seating themselves in the boat of divine knowledge. 
+    </code>
   </article>
 </section>
 
-<section class="bt b--black-10 center">
-  <h2 class="tc dim black b f2">Latest Articles</h2>      
-  {% for entry in entries |slice:":4" %}
 
-  <article class="pv4 bb b--black-10 ph3 ph0-l">
-    <div class="flex flex-column">
-      <div class="w-100 pr3-ns order-2 order-1-ns">
-        <small>
-          <time datetime="{{entry.PublishAt | slice: ":11" }}" class="black">
-            {{ entry.PublishAt }}
-          </time>
-        </small>
-        <a href="{{site.URL}}/{{entry.Slug}}" class="link">
-          <h2 class="f3 mt0 black lh-title">{{entry.Title}}</h2>
-        </a>
-        <p class="f5 f4-l lh-copy">
-          {{ entry.Excerpt }}&hellip;
-        </p>
-      </div>
-    </div>   
-    <small class="black">
-      {% for tag in entry.Tags %}
-        <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
-        {% if not forloop.Last %}, {% endif %}
-      {% endfor %}
-    </small>
-  </article>
-  {% endfor %}
-  </section>
 <section class="pa4-l" id="subscription-sections">
       <form class="bg-near-white mw7 center pa4 br2-ns" id="subscribe-form" name="subscribe-form" class="validate">
       <fieldset class="cf bn ma0 pa0">
