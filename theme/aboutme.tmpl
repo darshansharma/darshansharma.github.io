@@ -48,7 +48,7 @@
 
 </div>
 </article>
-<h5 class="dim black db mb4-ns">गुरू गोविन्द दोऊ खड़े, काके लागूं पांय।<br />
+<h5 class="dim db mb4-ns">गुरू गोविन्द दोऊ खड़े, काके लागूं पांय।<br />
                                                 बलिहारी गुरू अपने गोविन्द दियो बताय।।</h5>
   </header>
 
@@ -60,7 +60,7 @@
 </section>
 
 <section class="bt b--black-10 center">
-  <h2 class="tc dim black b f2">Latest Articles</h2>      
+  <h2 class="tc dim b f2">Latest Articles</h2>      
   {% for entry in entries |slice:":4" %}
 
   <article class="pv4 bb b--black-10 ph3 ph0-l">
@@ -79,7 +79,7 @@
         </p>
       </div>
     </div>   
-    <small class="black">
+    <small>
       {% for tag in entry.Tags %}
         <a href="{{site.URL}}/tags/{{tag}}/" class="link" target="_blank">#{{tag}}</a>
         {% if not forloop.Last %}, {% endif %}

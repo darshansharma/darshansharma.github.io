@@ -29,10 +29,10 @@
 
 {% block content %}
 <div class="tc">        
-  <h1 class="pt3 mb1 mt1 f3 black">All Articles I've Written So Far...</h1>
+  <h1 class="pt3 mb1 mt1 f3>All Articles I've Written So Far...</h1>
 </div>
   {% for entry in entries %}
-      <article class="bg-white center mw5 ba b--black-10 mv4">
+      <article class="center mw6 ba b--black-10 mv4">
       <div class="pv2 ph3">
         <h1 class="f6 ttu tracked"><a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}"">
             {{entry.Title}}</a></h1>
@@ -41,7 +41,7 @@
         <img src={{entry.FeaturedImage}} class="w-100 db" alt={{entry.URL}}>
         <div class="pa3">
           <a href="/{{entry.Slug}}/"title="click to read" class="link dim lh-title">{{ entry.Excerpt }}&hellip;</a>
-          <small class="gray db pv2">Published - <time datetime="{{entry.PublishAt | slice: ":11" }} class="f5 mv0">
+          <small class="gray db pv2">Published on <time datetime="{{entry.PublishAt | slice: ":11" }} class="f5 mv0">
                     {{ entry.PublishAt }}
                   </time></small>
         </div>

@@ -33,13 +33,13 @@
 
 <section class="center">
   <header class="tc pv2 pv3-ns">
-    <h3 class="dim black b f2 tc db mb3 mb4-ns">Thank you for subscribing :)</h3>
+    <h3 class="dim b f2 tc db mb3 mb4-ns">Thank you for subscribing :)</h3>
 <article>
 <p>You can unsubscribe any time from selecting the unsubscribe button in your email in the footer</p>
 </section>
 
 <section class="bt b--black-10 center">
-  <h2 class="tc dim black b f2">Latest Articles</h2>      
+  <h2 class="tc dim b f2">Latest Articles</h2>      
   {% for entry in entries |slice:":4" %}
 
   <article class="pv4 bb b--black-10 ph3 ph0-l">
@@ -51,7 +51,7 @@
           </time>
         </small>
         <a href="{{site.URL}}/{{entry.Slug}}" target="_blank" class="link">
-          <h2 class="f3 mt0 black lh-title">{{entry.Title}}</h2>
+          <h2 class="f3 mt0 lh-title">{{entry.Title}}</h2>
         </a>
         <p class="f5 f4-l lh-copy">
           {{ entry.Excerpt }}&hellip;

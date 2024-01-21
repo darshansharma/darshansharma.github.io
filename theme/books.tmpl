@@ -33,7 +33,7 @@
 
 <section class="center">
   <header class="tc pv2 pv3-ns">
-    <h3 class="dim black db mb4-ns">Books I have read - </h3>
+    <h3 class="dim db mb4-ns">Books I have read - </h3>
     
 <article>
 <div class="pa3 bb">
@@ -58,14 +58,14 @@
 </section>
 
 <section class="bt b--black-10 center">
-  <h2 class="tc dim black b f2">Latest Articles</h2>      
+  <h2 class="tc dim b f2">Latest Articles</h2>      
   {% for entry in entries |slice:":4" %}
 
   <article class="pv4 bb b--black-10 ph3 ph0-l">
     <div class="flex flex-column">
       <div class="w-100 pr3-ns order-2 order-1-ns">
         <small>
-          <time datetime="{{entry.PublishAt | slice: ":11" }}" class="black">
+          <time datetime="{{entry.PublishAt | slice: ":11" }}">
             {{ entry.PublishAt }}
           </time>
         </small>
@@ -77,7 +77,7 @@
         </p>
       </div>
     </div>   
-    <small class="black">
+    <small>
       {% for tag in entry.Tags %}
         <a href="{{site.URL}}/tags/{{tag}}/" class="link">#{{tag}}</a>
         {% if not forloop.Last %}, {% endif %}

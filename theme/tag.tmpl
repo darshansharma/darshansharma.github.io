@@ -32,7 +32,7 @@
 
 {% block content %}
 <div class="tc">        
-  <h1 class="pt3 mb1 mt1 f3 black">Posts under "{{tag}}"</h1>
+  <h1 class="pt3 mb1 mt1 f3>Posts under "{{tag}}"</h1>
 </div>
   {% for entry in entries %}
       <article class="pa3 bb b--moon-gray">
@@ -47,7 +47,7 @@
             </p>
 
         {% if entry.Tags %}
-          <small class="black">
+          <small>
             {% for tag in entry.Tags %}
               <a href="{{site.URL}}/tags/{{tag}}" class="link">#{{tag}}</a>
               {% if not forloop.Last %}, {% endif %}
