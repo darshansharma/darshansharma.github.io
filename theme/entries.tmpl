@@ -35,11 +35,12 @@
       <article class="pt3 pb3 bb b--moon-gray">
         <div>
           <small>
-            <time datetime="{{entry.PublishAt | slice: ":11" }}" class="black">
+            <time datetime="{{entry.PublishAt | slice: ":11" }}">
               {{ entry.PublishAt }}
             </time>
           </small>
             <p class="mb1 mt1 f4 black">
+              <img src={{entry.FeaturedImage}} />
               <a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}">{{entry.Title}}</a>
               <span class="i"> - {{ entry.Excerpt }}&hellip;</span>
             </p>
