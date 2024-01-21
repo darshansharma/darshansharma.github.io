@@ -23,23 +23,7 @@
   <link rel="alternate" href="{{site.url}}/feed.xml" title="{{site.Name}} feed" type="application/rss+xml"/>
   <link rel="alternate" href="{{site.url}}/atom.xml" title="{{site.Name}} atom feed" type="application/atom+xml"/>
   <link rel="alternate" href="{{site.url}}/feed.json" title="{{site.Name}} json feed" type="application/json" />
-  <script async defer data-domain="darshan.sh" src="https://plausible.io/js/plausible.js">
-    function changeColor() {
-      try{
-          if(document.getElementById('light-dark-theme-btn').innerHTML === '☼') {
-            document.getElementById('light-dark-theme-btn').innerHTML='✹';
-            document.body.style.backgroundColor = '#F2F3F4';  
-          } else {
-            document.getElementById('light-dark-theme-btn').innerHTML='☼';
-            document.body.style.backgroundColor = '#171717';  
-          }
-      } catch(e) {
-        console.log('Error:Google SDK: While applying theme light dark', 'falling back');
-        document.getElementById('light-dark-theme-btn').innerHTML='';
-        document.body.style.backgroundColor = '#F2F3F4';
-      }
-    }
-  </script>
+  <script async defer data-domain="darshan.sh" src="https://plausible.io/js/plausible.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   <style>
     .body-font {
@@ -57,6 +41,24 @@
   </style>
   {% block seo %}{% endblock %}
   </head>
+  <script>
+  function changeColor() {
+    console.log("reached");
+      try{
+          if(document.getElementById('light-dark-theme-btn').innerHTML === '☼') {
+            document.getElementById('light-dark-theme-btn').innerHTML='✹';
+            document.body.style.backgroundColor = '#F2F3F4';  
+          } else {
+            document.getElementById('light-dark-theme-btn').innerHTML='☼';
+            document.body.style.backgroundColor = '#171717';  
+          }
+      } catch(e) {
+        console.log('Error:Google SDK: While applying theme light dark', 'falling back');
+        document.getElementById('light-dark-theme-btn').innerHTML='';
+        document.body.style.backgroundColor = '#F2F3F4';
+      }
+    }
+</script>
   <body class="w-90 w-100-ns center body-font dark-gray">
   <main id="main" class="mw7 center">
     <nav class="pa3 pa4-ns pa4-m pa5-1 bb b--black-10">
