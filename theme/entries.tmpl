@@ -32,28 +32,20 @@
   <h1 class="pt3 mb1 mt1 f3 black">All Articles I've Written So Far...</h1>
 </div>
   {% for entry in entries %}
-      <article class="pt3 pb3 bb b--moon-gray">
-      <div>
+      <article class="bg-white center mw5 ba b--black-10 mv4">
+      <div class="pv2 ph3">
+        <h1 class="f6 ttu tracked"><a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}"">
+            {{entry.Title}}</a></h1>
+        </div>
 
-        <h1>
-          <a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}">
-            {{entry.Title}}
-          </a>
-        </h1>
-          <div>
-              <div>
-                <img width="200px" class="w-200 br2" src={{entry.FeaturedImage}} />
-              <div>
-              <div class="f6">
-                <span> - {{ entry.Excerpt }}&hellip;
-                </span>
-              </div>
-          </div>
-                <small>
-                  <time datetime="{{entry.PublishAt | slice: ":11" }} class="f5 mv0"">
+        <img src={{entry.FeaturedImage}} class="w-100 db" alt={{entry.URL}}>
+        <div class="pa3">
+          <a href="/{{entry.Slug}}/"title="click to read" class="link dim lh-title">{{ entry.Excerpt }}&hellip;</a>
+          <small class="gray db pv2">Published - <time datetime="{{entry.PublishAt | slice: ":11" }} class="f5 mv0">
                     {{ entry.PublishAt }}
-                  </time>
-                </small>
+                  </time></small>
+        </div>
+          
           
         {% if entry.Tags %}
           <small>
