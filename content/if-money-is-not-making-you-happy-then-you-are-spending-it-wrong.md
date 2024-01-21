@@ -7,7 +7,7 @@ He took me in his arms, I heard him say
 tags=["spirituality","life"]
 type="post"
 publish_at="07 Sep 2022 12:00 IST"
-featured_image=""
+featured_image="https://miro.medium.com/max/1080/1*lf432kOk7PBib6d3e1nTJQ.png"
 ---
 
 I was [research by Harvard](https://scholar.harvard.edu/files/danielgilbert/files/if-money-doesnt-make-you-happy.nov-12-20101.pdf) reading article about happiness so and it pointed 7 reasons a human with a regular income becomes happy when he focuses on —

@@ -1,11 +1,11 @@
 ---
 title="How I created a simple reels downloader in flutter?"
 slug="how-i-created-a-simple-reels-downloader-in-flutter"
-excerpt=""
+excerpt="Friday night 11:52PM I took my Thinkpad in my hand and started coding. So after trying for few hours I realised that the coding part was not as simple as I thought for simple reels downloader. "
 tags=["app","tech"]
 type="post"
 publish_at="28 Apr 2021 12:00 IST"
-featured_image=""
+featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1_IT6C9p1ogcQaB0iq4QYgAw.gif?alt=media&token=f4e9fd3b-ae4f-485c-9808-9d75bc5f4427"
 ---
 
 Hi I am Darshan. Like many people I spent (not waste 😂 ) too much time on Instagram reels. I am very much into fitness and many fitness related videos comes into my feed so sometimes I want to download them.

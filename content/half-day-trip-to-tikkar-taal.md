@@ -5,7 +5,7 @@ excerpt="The road which leads to destination is filled with more compassion than
 tags=["life","travel"]
 type="post"
 publish_at="04 May 2022 12:00 IST"
-featured_image=""
+featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2FPXL_20220430_024352346.jpeg?alt=media&token=f46bedca-9133-4396-88d9-6e83f7e1572b"
 ---
 
 We 3 friends decided on a Friday night to visit Morni Hills and Tikkar Taal on next morning. Since it was summer season so that's why we decided to leave at 5AM.

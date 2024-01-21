@@ -5,7 +5,7 @@ excerpt="Someone asked me today, why do you write? Isn’t there enough dirt alr
 tags=["life"]
 type="post"
 publish_at="28 Jul 2022 12:00 IST"
-featured_image=""
+featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/zomato-boy-funny.jpg"
 ---
 
  It’s 6:39 PM here. I just came home from gym. [darshan.sh](https://darshan.sh) my website is down because of some firestore code which I changed earlier today. I think 40 or 50 chrome tabs are still open which consist of the research/blog posts I am doing right now but since I am using a m1 machine so I no longer feel that I need to close them to write this post. 
@@ -16,7 +16,7 @@ featured_image=""
 
 To give myself a turing feel I am playing the background music of “the social network” right now. Only difference is I am not in a kirkland and php is no longer the most used backend language.   
 
-![zomato-boy-img](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fzomato-boy-funny.png?alt=media&token=4db5d1ea-99e5-496d-8535-e0b8cabcd7cf)   
+![zomato-boy-funny](https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/zomato-boy-funny.jpg)
 
 Let’s come to the question now — why do I write? After hovering over 200 answers in my mind I think I will give the final answer now - 
 
@@ -30,12 +30,12 @@ I know very little and on the basis of that I try to live and base my actions. A
 
 What’s the point of writing then, you might think? Do we really need a point to base our actions. Do I ask oxygen or take its permission before it goes to my lungs? Do we need to base our actions always by looking at results? That’s why I am saying — let people come in thousands to bash me or to praise me — I will still continue what I feel is right. Now it’s my turn to ask you a question? -
 
- **Would you still dare to do what you feel is right even after knowing that your wife, your son, your parents, all people living right now are against you?****  
+ **Would you still dare to do what you feel is right even after knowing that your wife, your son, your parents, all people living right now are against you?**  
 
 I take all responsibilities of my action. I am not a coward and definitely not someone who criticises others by staying behind the firewall (internet). It is easy to comment, harder to do. Easy to laugh, harder to inspire. Easy to speak, harder to take action. Easy to watch a video, harder to make one. Easy to be an employee, harder to be an employer. Easy to sit and scroll on internet, harder to make content.  
 
 Some of the answers amongst those 200 are worth writing. So I am writing those —
-![maybe](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fdog-giphy.gif?alt=media&token=75db2044-4737-4a25-b922-a8c62af2832a "dog-img")  
+![dog-giphy](https://dars-portfolio.s3.us-west-2.amazonaws.com/Gifs/dog-gip.gif) 
 
 1. Maybe, I want to write when I see a white blank canvas
 2. Maybe, I want to read my blog posts when I am on my deathbed

@@ -1,17 +1,18 @@
 ---
 title="Why Rock Lee is the best character in The tail of Naruto Uzumaki?"
 slug="why-rock-lee-might-be-the-best-character-in-series"
-excerpt=""
+excerpt="We all ask this question to ourself from time to time. We all get that negative self talk in our head going. And then his sensei gave the most amazing answer of all series-
+Yes every effort you are putting is worthless, if you don’t believe in yourself"
 tags=["life", "anime", "spirtuality"]
 type="post"
-publish_at="12 Feb 2022 12:00 IST"
-featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1_RywLtp5GZRuuQOlWOmtEzg.png?alt=media&token=183e1735-2c3a-44f2-9e11-0b3e5f56125a"
+publish_at="12 Feb 2022 11:00 IST"
+featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/Rock-Lee.jpg"
 ---
 
 
 > It is better to die trying what you believe in cause otherwise the chances are you are already dead.  
 
-![Rock Lee Picture](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1_RywLtp5GZRuuQOlWOmtEzg.png?alt=media&token=183e1735-2c3a-44f2-9e11-0b3e5f56125a "Rock Lee")
+![Rock-Lee](https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/Rock-Lee.jpg)
 
 
 Naruto might be the protagonist of the series but for me the most inspiring story if someone has that has to be Rock Lee.

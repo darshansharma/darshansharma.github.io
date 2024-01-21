@@ -5,10 +5,10 @@ excerpt="I must say, I have seen a lot of things that took place during my colle
 tags=["tech","gnu/linux"]
 type="post"
 publish_at="28 Jul 2022 04:00 IST"
-featured_image=""
+featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/btw-I-use-Arch.jpeg"
 ---
 
-![btw i use arch](https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F1658991179696.jpeg?alt=media&token=735909de-b800-4a0a-8e40-d8fd4a020719 "btw i use arch image") 
+![btw-I-use-Arch](https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/btw-I-use-Arch.jpeg) 
 
 **Year 2015:** After watching that every effort I made to hack private wifi on kali linux going in vain, somehow I got stumbled upon this new distro of linux — arch linux. I tried installing it in 2015 but as impatient as I was and on top of that a script kiddie always looking for command someone can provide I got a lot of bashing on arch linux’s IRC. Haha I still remember they used to say rtfm as answer to my every question. But I am very thankful to them for not telling me answers. It forced me to look out for myself. Once I asked them why they do that with me and one of the user shared an image which I still have with me — 
 

@@ -5,7 +5,7 @@ excerpt="Wouldn’t it be ironic we come to cities in search of advanced life st
 tags=["ai","tech","cosmos"]
 type="post"
 publish_at="08 Dec 2020 12:00 IST"
-featured_image=""
+featured_image="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fgiphy.gif?alt=media&token=b039dcdf-9b4e-42e8-983c-429d06a740d2"
 ---
 
 
