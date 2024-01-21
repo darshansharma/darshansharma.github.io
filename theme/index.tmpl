@@ -30,12 +30,20 @@
 
   <script type="text/javascript">
 
+
+  function hideSubscriptionMessage() {
+    setTimeout(function () {
+      document.getElementById("status").style.visibility = "hidden";
+    }, 4000);
+  }
+
+
   function addEmail(){
-    var subscribeButton = document.getElementById("subscribe");
+    
     try{
       
-      subscribeButton.disabled = true;
-      subscribeButton.value="↻"
+      document.getElementById("subscribe").value="Loading..."
+      
       console.log('Sending your request to main server ...');
       let userEmail = document.getElementById("email").value;
       let data = JSON.stringify({
@@ -51,33 +59,22 @@
       xhr.addEventListener("readystatechange", function() {
       if(this.readyState === 4) {
         document.getElementById("loader").style.display = "none";
-        subscribeButton.disabled = false;
-        subscribeButton.value="Subscribe";
-        document.getElementById("success-response").style.visibility = "visible";
-        document.getElementById("success-response").style.color = "#00BF63";
-        document.getElementById("success-response").style.fontWeight = "bold";
-        document.getElementById("success-response").innerHTML = "Thanks for subscribing. You will enjoy it !!";
+        document.getElementById("subscribe").value="Subscribe";
+        document.getElementById("status").style.visibility = "visible";
+        document.getElementById("status").style.color = "#00BF63";
+        document.getElementById("status").style.fontWeight = "bold";
+        document.getElementById("status").innerHTML = "Thanks for subscribing. You will enjoy it !!";
     
   } else {
         document.getElementById("loader").style.display = "none";
-        subscribeButton.disabled = false;
-        subscribeButton.value="Subscribe";
-        document.getElementById("success-response").style.visibility = "visible";
-        document.getElementById("success-response").style.color = "#E86D79";
-        document.getElementById("success-response").style.fontWeight = "bold";
-        document.getElementById("error-response").innerHTML = "Please try some time later. Some problem with server";
-    
+        document.getElementById("subscribe").value="Subscribe";
+        document.getElementById("status").style.visibility = "visible";
+        document.getElementById("status").style.color = "#E86D79";
+        document.getElementById("status").style.fontWeight = "bold";
+        document.getElementById("status").innerHTML = "Please try some time later. Some problem with server";
   }
 
-  setTimeout(() => {
-    document.getElementById("email").value = "";
-    subscribeButton.disabled = false;
-    subscribeButton.value="Subscribe";
-    document.getElementById("success-response").style.visibility = "hidden";
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("error-response").style.visibility = "hidden";
-
-},5000);
+  hideSubscriptionMessage();
 
 });
 
@@ -85,24 +82,15 @@
     }
 
     catch(err) {
-      document.getElementById("success-response").style.visibility = "visible";
-      document.getElementById("success-response").style.color = "#E86D79";
-      subscribeButton.disabled = false;
-      subscribeButton.value="Subscribe";
+      document.getElementById("status").style.visibility = "visible";
+      document.getElementById("status").style.color = "#E86D79";
+      document.getElementById("subscribe").value="Subscribe";
       document.getElementById("loader").style.display = "none";
-      document.getElementById("success-response").style.fontWeight = "bold";
-      document.getElementById("error-response").innerHTML = "Please try again later.";
-
-      setTimeout(() => {
-      document.getElementById("email").value = "";
-      subscribeButton.disabled = false;
-      subscribeButton.value="Subscribe";
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("success-response").style.visibility = "hidden";
-      document.getElementById("error-response").style.visibility = "hidden";
-
-    },5000);
+      document.getElementById("status").style.fontWeight = "bold";
+      document.getElementById("status").innerHTML = "Please try again later.";
     }
+
+    hideSubscriptionMessage();
 
     }
   
@@ -146,8 +134,7 @@
             type="email" value="" name="EMAIL" class="required email" id="email" required aria-label="email-label">
             <input class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-dark-gray white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
               type="button" value="Subscribe" name="subscribe" id="subscribe" class="button" onClick="addEmail()">
-              <div class="response" id="error-response" style="visibility:hidden"></div>
-              <div class="response" id="success-response" style="visibility:hidden"></div>
+              <div class="response" id="status" style="visibility:hidden"></div>
             </div>
       </fieldset>
     </form>
