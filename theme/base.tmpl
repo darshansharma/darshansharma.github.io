@@ -23,7 +23,23 @@
   <link rel="alternate" href="{{site.url}}/feed.xml" title="{{site.Name}} feed" type="application/rss+xml"/>
   <link rel="alternate" href="{{site.url}}/atom.xml" title="{{site.Name}} atom feed" type="application/atom+xml"/>
   <link rel="alternate" href="{{site.url}}/feed.json" title="{{site.Name}} json feed" type="application/json" />
-  <script async defer data-domain="darshan.sh" src="https://plausible.io/js/plausible.js"></script>
+  <script async defer data-domain="darshan.sh" src="https://plausible.io/js/plausible.js">
+    function changeColor() {
+      try{
+          if(document.getElementById('light-dark-theme-btn').innerHTML === '☼') {
+            document.getElementById('light-dark-theme-btn').innerHTML='✹';
+            document.body.style.backgroundColor = '#F2F3F4';  
+          } else {
+            document.getElementById('light-dark-theme-btn').innerHTML='☼';
+            document.body.style.backgroundColor = '#171717';  
+          }
+      } catch(e) {
+        console.log('Error:Google SDK: While applying theme light dark', 'falling back');
+        document.getElementById('light-dark-theme-btn').innerHTML='';
+        document.body.style.backgroundColor = '#F2F3F4';
+      }
+    }
+  </script>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   <style>
     .body-font {
@@ -51,7 +67,7 @@
         <a class="link dim hover-purple f6 f5-ns dib mr3" href="https://darshan.sh/#subscription-sections" title="subscribe">Newsletter</a>
         <a class="link dim hover-purple f6 f5-ns dib mr3" href="https://darshan.sh/books" title="Books">Books</a>
         <a class="link dim hover-purple f6 f5-ns dib mr3" href="https://darshan.sh/courses" title="courses">Courses</a>
-        <a class="f3 link dim dib ba ph3 pv2 mb2 pointer hover-bg-light-grey dib mid-gray">✹</a>  
+        <a id="light-dark-theme-btn" class="link dim hover-purple f3 pointer f5-ns dib mr3" onclick='changeColor()'>✹</a>  
       </div>      
     </nav>
   
