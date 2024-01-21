@@ -5,7 +5,7 @@ excerpt="This quote was engraved in my heart that day. And till day, whenever I 
 tags=["life", "spirtuality", "growth"]
 type="post"
 publish_at="17 Sep 2022 11:38 IST"
-featured_image=""
+featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/unique-YOU.jpg"
 ---
 
 This took me back to my school days and I remember someone saying the same thing to me. The point is not that someone said the same to me, but this particular quote took me out of the chain of negative thought cycles from time to time. My version was a little bit different. I was taking coaching from Aakash Institue in sector 34 Chandigarh for the IIT entrance exam and I was in 10+1 standard back then. There, was this friend of mine (let's call him B). B had a nature of teasing me but deep down he always cared for me like a big brother. I was an average student and I used to get jealous of the toppers of our batch. I wanted to beat them in academics but they were born with the natural talent for problem-solving skills. One day frustrated, I asked B — How can I become like them? And then B said the most beautiful quote of my life -
@@ -17,6 +17,8 @@ I was surprised that B was making my morale down when he should cheer me up but 
 > **” Perhaps you might become lower/poor in academics than them OR you might become better than them. But you can never become like them.”**
 
 This quote was engraved in my heart that day. And till day, whenever I feel inferior to anyone — this quote comes from my unconscious mind and reaches to the top of my conscious mind and removes all the hatred/jealousy.
+
+![unique-me](https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/unique-YOU.jpg)
 
 Life is not a race. It’s a marathon and I am unique person born with unique talents of mine. There is no one in the whole world who is like me. There is no one in the whole world like you. Everyone is unique.
 
