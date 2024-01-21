@@ -33,18 +33,23 @@
 </div>
   {% for entry in entries %}
       <article class="pt3 pb3 bb b--moon-gray">
-        <div>
-          <small>
-            <time datetime="{{entry.PublishAt | slice: ":11" }}">
-              {{ entry.PublishAt }}
-            </time>
-          </small>
+      <div>
+        <div class="pa2 ph3-ns pb3-ns">
+        <a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}">{{entry.Title}}</a>
+          
             <p class="mb1 mt1 f4 black">
-              <img src={{entry.FeaturedImage}} />
-              <a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}">{{entry.Title}}</a>
-              <span class="i"> - {{ entry.Excerpt }}&hellip;</span>
+            
+              <div class="dtc">
+                <img class="w-200 db br2" src={{entry.FeaturedImage}} />
+              <div>
+              <small class="dtc tr">
+                <time datetime="{{entry.PublishAt | slice: ":11" }} class="f5 mv0"">
+                  {{ entry.PublishAt }}
+                </time>
+              </small>
+              <span "class="f6 lh-copy measure mt2"> - {{ entry.Excerpt }}&hellip;</span>
             </p>
-
+          </div>
         {% if entry.Tags %}
           <small class="black">
             {% for tag in entry.Tags %}
