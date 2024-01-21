@@ -56,7 +56,7 @@
             document.getElementById('light-dark-theme-btn').classList.add('dark-theme');
             document.getElementById('light-dark-theme-btn').classList.remove('light-theme');
           }
-          if (document.getElementById('light-dark-theme-btn').classList.contains('dark-theme')){
+          else if (document.getElementById('light-dark-theme-btn').classList.contains('dark-theme')){
             document.documentElement.style.setProperty("--bg-color", "#F2F3F4");
             document.documentElement.style.setProperty("--text-color", "#000000");
             document.getElementById('light-dark-theme-btn').innerHTML='☼';
