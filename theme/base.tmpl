@@ -38,7 +38,7 @@
     .lh-copy  { line-height: 1.75; }
     b,strong { var(--text-color); }
     h2 { var(--text-color); text-decoration: underline;}
-    h3,h4,h5 { var(--text-color); }
+    h1,h3,h4,h5,p,div,li,main,section { var(--text-color); }
     #content a {  var(--text-color); text-decoration: none; }
     #content a:hover {  opacity: 40%; }
     main nav a {  color: var(--text-color); text-decoration: none; }
@@ -50,13 +50,13 @@
   function changeColor() {
       try{
           if(document.getElementById('light-dark-theme-btn').innerHTML === '☼') {
-            document.getElementById('light-dark-theme-btn').innerHTML='✹';
             document.documentElement.style.setProperty("--bg-color", "#171717");
             document.documentElement.style.setProperty("--text-color", "#FFFFFF");
+            document.getElementById('light-dark-theme-btn').innerHTML='✹';
           } else {
-            document.getElementById('light-dark-theme-btn').innerHTML='☼';
             document.documentElement.style.setProperty("--bg-color", "#F2F3F4");
             document.documentElement.style.setProperty("--text-color", "#000000");
+            document.getElementById('light-dark-theme-btn').innerHTML='☼';
           }
       } catch(e) {
         console.log('Error:Google SDK: While applying theme light dark', 'falling back');
