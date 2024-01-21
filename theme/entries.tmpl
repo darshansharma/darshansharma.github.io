@@ -34,30 +34,29 @@
   {% for entry in entries %}
       <article class="pt3 pb3 bb b--moon-gray">
       <div>
-        <div class="pa2 ph3-ns pb3-ns">
+
         <h1>
           <a href="/{{entry.Slug}}/"title="click to read {{entry.Slug}}">
             {{entry.Title}}
           </a>
         </h1>
-              <div class="dtc mw5">
-                <img class="w-200 db br2" src={{entry.FeaturedImage}} />
+          <div>
               <div>
-              <div class="f6 dtc tr">
-                <span class="f6 lh-copy measure mt2"> - {{ entry.Excerpt }}&hellip;
+                <img width="200px" class="w-200 br2" src={{entry.FeaturedImage}} />
+              <div>
+              <div class="f6">
+                <span> - {{ entry.Excerpt }}&hellip;
                 </span>
               </div>
-              
+          </div>
                 <small>
                   <time datetime="{{entry.PublishAt | slice: ":11" }} class="f5 mv0"">
                     {{ entry.PublishAt }}
                   </time>
                 </small>
-              
-            </div> 
           
         {% if entry.Tags %}
-          <small class="black">
+          <small>
             {% for tag in entry.Tags %}
               <a href="/tags/{{tag}}/" class="link" title="click to read all articles under {{tag}}">#{{tag}}</a>
               {% if not forloop.Last %}, {% endif %}
