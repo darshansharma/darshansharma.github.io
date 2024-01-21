@@ -1,7 +1,7 @@
 ---
 title="Let's Learn Tmux"
 slug="lets-learn-tmux"
-excerpt=""
+excerpt="Tmux is an invaluable tool for anyone who works with multiple terminals on a regular basis. Whether you're a developer, system administrator, or just someone who wants to organize their terminal workflow, tmux is worth checking out."
 tags=["linux", "how-to"]
 type="post"
 publish_at="17 Jan 2024 12:00 IST"
