@@ -38,7 +38,7 @@
     .lh-copy  { line-height: 1.75; }
     b,strong { var(--text-color); }
     h2 { var(--text-color); text-decoration: underline;}
-    h1,h3,h4,h5,p,div,li,main,section { var(--text-color); }
+    h1,h3,h4,h5,p,div,li,main,section,code { var(--text-color); }
     #content a {  var(--text-color); text-decoration: none; }
     #content a:hover {  opacity: 40%; }
     main nav a {  color: var(--text-color); text-decoration: none; }
@@ -49,14 +49,19 @@
   <script>
   function changeColor() {
       try{
-          if(document.getElementById('light-dark-theme-btn').innerHTML === '☼') {
+          if(document.getElementById('light-dark-theme-btn').classList.contains('light-theme')) {
             document.documentElement.style.setProperty("--bg-color", "#171717");
             document.documentElement.style.setProperty("--text-color", "#FFFFFF");
             document.getElementById('light-dark-theme-btn').innerHTML='✹';
-          } else {
+            document.getElementById('light-dark-theme-btn').classList.add('dark-theme');
+            document.getElementById('light-dark-theme-btn').classList.remove('light-theme');
+          }
+          if (document.getElementById('light-dark-theme-btn').classList.contains('dark-theme')){
             document.documentElement.style.setProperty("--bg-color", "#F2F3F4");
             document.documentElement.style.setProperty("--text-color", "#000000");
             document.getElementById('light-dark-theme-btn').innerHTML='☼';
+            document.getElementById('light-dark-theme-btn').classList.add('light-theme');
+            document.getElementById('light-dark-theme-btn').classList.remove('dark-theme');
           }
       } catch(e) {
         console.log('Error:Google SDK: While applying theme light dark', 'falling back');
@@ -76,7 +81,7 @@
         <a class="link dim hover-purple f6 f5-ns dib mr3" href="https://darshan.sh/#subscription-sections" title="subscribe">Newsletter</a>
         <a class="link dim hover-purple f6 f5-ns dib mr3" href="https://darshan.sh/books" title="Books">Books</a>
         <a class="link dim hover-purple f6 f5-ns dib mr3" href="https://darshan.sh/courses" title="courses">Courses</a>
-        <a id="light-dark-theme-btn" class="link dim hover-purple f3 pointer f5-ns dib mr3" onclick='changeColor()'>✹</a>  
+        <a id="light-dark-theme-btn" class="link dim hover-purple light-theme f3 pointer f5-ns dib mr3" onclick='changeColor()'>✹</a>  
       </div>      
     </nav>
   
