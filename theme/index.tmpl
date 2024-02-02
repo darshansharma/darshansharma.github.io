@@ -8,9 +8,9 @@
 <meta property="og:title" content="{{site.Name}}"/>
 <meta property="og:description" content="{{site.Description}}"/>
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta property="og:image" content="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/profilePhotoDarshan.jpg" />
 <meta name="twitter:title" content="{{site.Name}}" />
-<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" />
+<meta name="twitter:image" content="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/profilePhotoDarshan.jpg" />
 <meta name="description" content="{{site.Description}}"/>
 <meta name="twitter:description" content="{{site.Description}}" />
 <script type="application/ld+json">
@@ -20,7 +20,7 @@
       "headline": "{{site.Name}}",
       "url": "{{site.URL}}",
       "description": "{{site.Description}}",
-      "image": "https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2",
+      "image": "https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/profilePhotoDarshan.jpg",
       "author": {
         "@type": "Person",
         "name": "{{user.Name}}"
@@ -35,6 +35,60 @@
     setTimeout(function () {
       document.getElementById("status").style.visibility = "hidden";
     }, 4000);
+  }
+
+  function chat() {
+    const accessToken = process.env.ACCESS_TOKEN;
+    const projectId = "darshansharma-ur" 
+    const modelId = "chat-bison"; 
+    const prompt = document.getElementById("chat_text").value; 
+    const author = "user"
+
+const url = `https://us-central1-aiplatform.googleapis.com/v1/projects/${projectId}/locations/us-central1/publishers/google/models/${modelId}:serverStreamingPredict?alt=sse`;
+
+const data = {
+  inputs: [
+    {
+      struct_val: {
+        messages: {
+          list_val: [
+            {
+              struct_val: {
+                content: {
+                  string_val: [prompt]
+                },
+                author: {
+                  string_val: [author]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  parameters: {
+    struct_val: {
+      temperature: { float_val: 0.5 },
+      maxOutputTokens: { int_val: 1024 },
+      topK: { int_val: 40 },
+      topP: { float_val: 0.95 }
+    }
+  }
+};
+
+fetch(url, {
+  method: 'POST',
+  headers: {
+    'Authorization': `Bearer ${accessToken}`,
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));
+
   }
 
 
@@ -103,8 +157,8 @@
 
 <section class="center">
   <header class="tc pv2 pv3-ns">
-    <img src="https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2F286366543_436060667935480_6479411762365981172_n.jpeg?alt=media&token=0dbe8925-c5ca-420a-a2f1-63d51fb74ee2" class="br-100 pa1 h5 w5 ba b--black-10" alt="avatar">
-    <h1 class="dim b f2 tc db mb3 mb4-ns">Darshan Sharma</h1>
+    <img src="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/profilePhotoDarshan.jpg" class="br-100 pa1 h5 w5 ba b--black-10" alt="avatar">
+    <h1 class="f1 tc lh-title tc mb3 mb4-ns">Darshan Sharma</h1>
   </header>
 
   <article class="f4 lh-copy">      
@@ -140,4 +194,16 @@
       </fieldset>
     </form>
 </section>
+
+<section>
+
+<form class="pa4 black-80">
+  <div class="measure">
+    <label for="name" class="f6 b db mb2">vidurGPT - Come Chat with me</label>
+    <input id="chat_text" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
+      <div class="ph3"><a class="f6 link dim ba ph3 pv2 mb2 dib" href="#0" onclick="chat()">Shoot</a></div>
+  </div>
+</form>
+
+<section>
 {% endblock %}

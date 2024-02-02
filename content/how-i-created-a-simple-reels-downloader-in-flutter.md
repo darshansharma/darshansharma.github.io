@@ -1,7 +1,7 @@
 ---
 title="How I created a simple reels downloader in flutter?"
 slug="how-i-created-a-simple-reels-downloader-in-flutter"
-excerpt="Friday night 11:52PM I took my Thinkpad in my hand and started coding. So after trying for few hours I realised that the coding part was not as simple as I thought for simple reels downloader. "
+excerpt="Friday night 11:52PM I took my Thinkpad in my hand and started coding. So after trying for few hours I realised that the coding part was not as simple as I thought for simple reels downloader."
 tags=["app","tech"]
 type="post"
 publish_at="28 Apr 2021 12:00 IST"

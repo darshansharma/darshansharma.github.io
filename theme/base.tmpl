@@ -46,6 +46,9 @@
     article,code,p,main,span { color: var(--text-color); }
     pre {background-color: #999999 }
     form {background-color: #999999 }
+    footer {
+      border-top-color: var(--text-color);
+    }
   </style>
   {% block seo %}{% endblock %}
   </head>
@@ -74,9 +77,9 @@
       }
     }
 </script>
-  <body class="w-90 w-100-ns center body-font dark-gray">
-  <main id="main" class="mw7 center">
-    <nav class="pa3 pa4-ns pa4-m pa5-1 bb b--black-10">
+  <body class="w-100 body-font dark-gray">
+  <main id="main" class="mw7 pa2 center">
+    <nav class="pa3 pa4-ns pa4-m pa5">
       <div class="tc">
         <a href="/" class="link hover-purple"><h2 class="f4">Darshan Sharma</h2></a>
         <a class="link dim hover-purple f6 f5-ns dib mr3" href="https://darshan.sh/posts" title="posts">Blog</a>
@@ -94,10 +97,10 @@
   </main>
 
   <!-- SVG Icons are from https://simpleicons.org -->
-<footer style="background-image:url(https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fbackground-footer.gif?alt=media);" class="tc-l bg-center cover bg-black">
+<footer class="w-100 tc pa3 bg-center cover bg-black bt bw2" style="background-image:url(https://firebasestorage.googleapis.com/v0/b/darshansharma-ur.appspot.com/o/images%2Fbackground-footer.gif?alt=media); border-top-color: var(--text-color);">
   <nav class="f6 fw6 ttu tracked pt3">  
     <a class="link dim dib mr3 white" href="{{site.URL}}/tags" title="Topics">Topics</a>
-    <a class="link dim dib white" href="{{site.URL}}/subscribe/" title="Subscribe">Subscribe</a>
+    <a class="link dim dib white" href="{{site.URL}}/#subscription-sections/" title="Subscribe">Subscribe</a>
     </nav>
 
     <div class="w-100 ph3 pv3 bg-black-80">
@@ -107,10 +110,10 @@
       <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://leetcode.com/darshansharma_" title="Leetcode" target="_blank">
         <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><title>LeetCode</title><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" id="mainIconPathAttribute" filter="url(#shadow)"></path><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter></svg>
       </a>
-      <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://instagram.com/darshan.codes" title="Instagram" target="_blank">
+      <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://instagram.com/darshansharma_" title="Instagram" target="_blank">
         <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.048 3.233c-.036.78-.166 1.203-.276 1.485-.145.374-.318.64-.598.92-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.844.038-1.097.047-3.233.047s-2.39-.01-3.233-.048c-.78-.036-1.203-.166-1.485-.276-.374-.145-.64-.318-.92-.598-.28-.28-.453-.546-.598-.92-.11-.282-.24-.705-.276-1.485C1.45 10.39 1.44 10.136 1.44 8s.01-2.39.048-3.233c.036-.78.166-1.203.276-1.485.145-.374.318-.64.598-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276C5.61 1.45 5.864 1.44 8 1.44zm0 2.452c-2.27 0-4.108 1.84-4.108 4.108 0 2.27 1.84 4.108 4.108 4.108 2.27 0 4.108-1.84 4.108-4.108 0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473 0-2.667-1.194-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667 0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z"/></svg>  
       </a>
-      <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://www.youtube.com/channel/UCBy6mkH5LUTOIDbUBablDXQ" title="youtube" target="_blank">
+      <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://www.youtube.com/@darshansharma_" title="youtube" target="_blank">
         <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
       </a>
       
