@@ -37,62 +37,6 @@
     }, 4000);
   }
 
-  function chat() {
-    alert("Sorry, I am in development mode right now. I will be ready soon");
-    const accessToken = process.env.ACCESS_TOKEN;
-    const projectId = "darshansharma-ur" 
-    const modelId = "chat-bison"; 
-    const prompt = document.getElementById("chat_text").value; 
-    const author = "user"
-
-const url = `https://us-central1-aiplatform.googleapis.com/v1/projects/${projectId}/locations/us-central1/publishers/google/models/${modelId}:serverStreamingPredict?alt=sse`;
-
-const data = {
-  inputs: [
-    {
-      struct_val: {
-        messages: {
-          list_val: [
-            {
-              struct_val: {
-                content: {
-                  string_val: [prompt]
-                },
-                author: {
-                  string_val: [author]
-                }
-              }
-            }
-          ]
-        }
-      }
-    }
-  ],
-  parameters: {
-    struct_val: {
-      temperature: { float_val: 0.5 },
-      maxOutputTokens: { int_val: 1024 },
-      topK: { int_val: 40 },
-      topP: { float_val: 0.95 }
-    }
-  }
-};
-
-fetch(url, {
-  method: 'POST',
-  headers: {
-    'Authorization': `Bearer ${accessToken}`,
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(data)
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error:', error));
-
-  }
-
-
   function addEmail(){
     
     try{
@@ -196,7 +140,7 @@ fetch(url, {
     </form>
 </section>
 
-<section>
+<!-- <section>
 
 <form class="pa4 black-80">
   <div class="measure">
@@ -207,4 +151,5 @@ fetch(url, {
 </form>
 
 <section>
+-->
 {% endblock %}
