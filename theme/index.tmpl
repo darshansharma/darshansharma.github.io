@@ -45,38 +45,38 @@
       
       console.log('Sending your request to main server ...');
       let userEmail = document.getElementById("email").value;
-      let data = JSON.stringify({
-        "email": userEmail
-      });
+      
 
       var xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://us-central1-darshansharma-ur.cloudfunctions.net/addEmail");
-      xhr.setRequestHeader("Content-Type", "application/json");
-      document.getElementById("loader").style.display = "block";
-      document.getElementById("subscribe").
-      xhr.send(data);
-      xhr.addEventListener("readystatechange", function() {
-      if(this.readyState === 4) {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("subscribe").value="Subscribe";
-        document.getElementById("status").style.visibility = "visible";
-        document.getElementById("status").style.color = "#00BF63";
-        document.getElementById("status").style.fontWeight = "bold";
-        document.getElementById("status").innerHTML = "Thanks for subscribing. You will enjoy it !!";
-    
-  } else {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("subscribe").value="Subscribe";
-        document.getElementById("status").style.visibility = "visible";
-        document.getElementById("status").style.color = "#E86D79";
-        document.getElementById("status").style.fontWeight = "bold";
-        document.getElementById("status").innerHTML = "Please try some time later. Some problem with server";
-  }
+      var endpoint = "https://7wfizhk3xb5xaid3rg2geb6lsq0otwxn.lambda-url.us-west-2.on.aws/";
+      var payload = {
+        email: userEmail
+      };
 
-  hideSubscriptionMessage();
+    xhr.open("POST", endpoint, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
 
-});
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log(xhr.responseText);
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("subscribe").value="Subscribe";
+          document.getElementById("status").style.visibility = "visible";
+          document.getElementById("status").style.color = "#00BF63";
+          document.getElementById("status").style.fontWeight = "bold";
+          document.getElementById("status").innerHTML = "Thanks for subscribing. You will enjoy it !!";
+      } else {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("subscribe").value="Subscribe";
+          document.getElementById("status").style.visibility = "visible";
+          document.getElementById("status").style.color = "#E86D79";
+          document.getElementById("status").style.fontWeight = "bold";
+          document.getElementById("status").innerHTML = "Please try some time later. Some problem with server";
+      }
+    };
 
+    xhr.send(JSON.stringify(payload));
+    hideSubscriptionMessage();
     
     }
 
@@ -87,7 +87,7 @@
       document.getElementById("subscribe").value="Subscribe";
       document.getElementById("loader").style.display = "none";
       document.getElementById("status").style.fontWeight = "bold";
-      document.getElementById("status").innerHTML = "Please try again later.";
+      document.getElementById("status").innerHTML = "Unable to add your email. Sorry. Will add you later for sure ";
     }
 
     hideSubscriptionMessage();
