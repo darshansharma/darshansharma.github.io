@@ -100,7 +100,24 @@ function chat() {
     const prompt = document.getElementById("chat_text").value; 
     const author = "user"
     const actionBtn = document.getElementById("shoot");
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${atob($labels.replace('GEMINI', ''))}`;
+    let url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
+
+    // Wait for URL to get updated 
+    document.addEventListener('DOMContentLoaded', function() {
+      let labels = '';
+      const label1 = document.getElementById("vidurgptlabel1");
+      const label2 = document.getElementById("vidurgptlabel2");
+      const label3 = document.getElementById("vidurgptlabel3");
+
+    if (label1 && label2 && label3) {
+        labels = `${label1.className}JudG9SbFNZSDdW${label2.className}`;
+        labels += label3.className;
+        url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${atob(labels.replace('GEMINI', ''))}`;
+        console.log(url);
+    } else {
+        console.error('One or more elements not found');
+    }
+});
 
     const data = {
       "contents": [{
