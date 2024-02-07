@@ -37,63 +37,110 @@
     }, 4000);
   }
 
-  function addEmail(){
+function addEmail(){
     
-    try{
+  try{
       
-      document.getElementById("subscribe").value="Loading..."
-      
-      console.log('Sending your request to main server ...');
-      let userEmail = document.getElementById("email").value;
-      
+    document.getElementById("subscribe").value="Loading..."
+    
+    console.log('Sending your request to main server ...');
+    let userEmail = document.getElementById("email").value;
+    
 
-      var xhr = new XMLHttpRequest();
-      var endpoint = "https://7wfizhk3xb5xaid3rg2geb6lsq0otwxn.lambda-url.us-west-2.on.aws/";
-      var payload = {
-        email: userEmail
-      };
+    var xhr = new XMLHttpRequest();
+    var endpoint = "https://7wfizhk3xb5xaid3rg2geb6lsq0otwxn.lambda-url.us-west-2.on.aws/";
+    var payload = {
+      email: userEmail
+    };
 
     xhr.open("POST", endpoint, true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
-          console.log(xhr.responseText);
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("subscribe").value="Subscribe";
-          document.getElementById("status").style.visibility = "visible";
-          document.getElementById("status").style.color = "#00BF63";
-          document.getElementById("status").style.fontWeight = "bold";
-          document.getElementById("status").innerHTML = "Thanks for subscribing. You will enjoy it !!";
+        console.log(xhr.responseText);
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("subscribe").value="Subscribe";
+        document.getElementById("status").style.visibility = "visible";
+        document.getElementById("status").style.color = "#00BF63";
+        document.getElementById("status").style.fontWeight = "bold";
+        document.getElementById("status").innerHTML = "Thanks for subscribing. You will enjoy it !!";
       } else {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("subscribe").value="Subscribe";
-          document.getElementById("status").style.visibility = "visible";
-          document.getElementById("status").style.color = "#E86D79";
-          document.getElementById("status").style.fontWeight = "bold";
-          document.getElementById("status").innerHTML = "Please try some time later. Some problem with server";
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("subscribe").value="Subscribe";
+        document.getElementById("status").style.visibility = "visible";
+        document.getElementById("status").style.color = "#E86D79";
+        document.getElementById("status").style.fontWeight = "bold";
+        document.getElementById("status").innerHTML = "Please try some time later. Some problem with server";
       }
     };
 
     xhr.send(JSON.stringify(payload));
-    hideSubscriptionMessage();
+  hideSubscriptionMessage();
     
     }
 
-    catch(err) {
-      console.log("Error: ", err);
-      document.getElementById("status").style.visibility = "visible";
-      document.getElementById("status").style.color = "#E86D79";
-      document.getElementById("subscribe").value="Subscribe";
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("status").style.fontWeight = "bold";
-      document.getElementById("status").innerHTML = "Unable to add your email. Sorry. Will add you later for sure ";
-    }
+  catch(err) {
+    console.log("Error: ", err);
+    document.getElementById("status").style.visibility = "visible";
+    document.getElementById("status").style.color = "#E86D79";
+    document.getElementById("subscribe").value="Subscribe";
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("status").style.fontWeight = "bold";
+    document.getElementById("status").innerHTML = "Unable to add your email. Sorry. Will add you later for sure ";
+  }
 
-    hideSubscriptionMessage();
+  hideSubscriptionMessage();
 
-    }
-  
+}
+
+function chat() {
+    const API_KEY = process.env.API_KEY; 
+    const prompt = document.getElementById("chat_text").value; 
+    const author = "user"
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
+
+    const data = {
+      "contents": [{
+        "parts": [
+          {"text": `${prompt} and do not exceed 2 lines in your response`}
+        ]
+      }],
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ],
+      "generationConfig": {
+        "stopSequences": [
+          "Title"
+        ],
+        "temperature": 0.4,
+        "maxOutputTokens": 800,
+        "topP": 0.8,
+        "topK": 10
+      }
+    };
+
+fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json', 
+    },
+    body: JSON.stringify(data)
+  })
+    .then((response) => {
+      console.log(response.json());
+  })
+    .then(data => {
+      console.log(data);
+  })
+    .catch(error => {
+      console.error('Error:', error);
+  });
+
+}
 
 </script>
 {% endblock %}
@@ -140,7 +187,6 @@
     </form>
 </section>
 
-<!-- <section>
 
 <form class="pa4 black-80">
   <div class="measure">
@@ -150,6 +196,7 @@
   </div>
 </form>
 
+
 <section>
--->
+
 {% endblock %}
