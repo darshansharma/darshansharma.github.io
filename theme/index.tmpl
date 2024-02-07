@@ -100,7 +100,7 @@ function chat() {
     const prompt = document.getElementById("chat_text").value; 
     const author = "user"
     const actionBtn = document.getElementById("shoot");
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${atob(labels.replace('GEMINI', ''))}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${atob($labels.replace('GEMINI', ''))}`;
 
     const data = {
       "contents": [{
