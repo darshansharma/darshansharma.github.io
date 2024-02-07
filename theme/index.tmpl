@@ -106,7 +106,8 @@ function chat() {
     const label3 = label3Element ? label3Element.className : "zcxbkUzU3NtVlR3";
 
     const labels = `${label1}JudG9SbFNZSDdW${label2}${label3}`;
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${atob(labels.replace('GEMINI', ''))}`;
+    const cleanLabels = labels.replace(/GEMINI/gi, '');
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${atob(cleanLabels)}`;
 
     const data = {
       "contents": [{
