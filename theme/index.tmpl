@@ -95,12 +95,9 @@ function addEmail(){
 }
 
 function chat() {
-    let labels = `${document.getElementById("vidurgptlabel1").className}JudG9SbFNZSDdW${document.getElementById("vidurgptlabel2").className}`;
-    labels += document.getElementById("vidurgptlabel3").className;
     const prompt = document.getElementById("chat_text").value; 
     const author = "user"
     const actionBtn = document.getElementById("shoot");
-    let labels = '';
     const label1Element = document.getElementById("vidurgptlabel1");
     const label1 = label1Element ? label1Element.className : "QUl6YVN5QVZIM0";
     const label2Element = document.getElementById("vidurgptlabel2");
@@ -108,8 +105,7 @@ function chat() {
     const label3Element = document.getElementById("vidurgptlabel3");
     const label3 = label3Element ? label3Element.className : "zcxbkUzU3NtVlR3";
 
-    labels = `${label1.className}JudG9SbFNZSDdW${label2.className}`;
-    labels += label3.className;
+    const labels = `${label1}JudG9SbFNZSDdW${label2}${label3}`;
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${atob(labels.replace('GEMINI', ''))}`;
 
     const data = {
