@@ -1,7 +1,7 @@
 ---
 title="Book Mate Last Day Examination Helper"
 slug="bookmate-last-min-exam-helper"
-excerpt="We did not domesticate wheat. It domesticated us"
+excerpt="You have just one day left to prepare and haven't started any preparation yet. Book Mate will help you"
 tags=["bedrock-aws", "hackathon", "partyrock-hackathon"]
 type="post"
 publish_at="16 Feb 2024 05:34 IST"
