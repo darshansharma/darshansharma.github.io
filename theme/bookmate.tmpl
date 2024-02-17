@@ -112,38 +112,24 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
         .then(data => {
         console.log(data.candidates[0].content.parts[0].text);
         const output = data.candidates[0].content.parts[0].text;
-        const sections = output.split('\n\n');
-        let sectionTitle = "Title";
-        let items = [];
-    for (let i = 0; i < sections.length; i++) {
-        let sectionLines = sections[i].split('\n'); 
-        sectionTitle = sectionLines.shift().trim();
+        const trimmedOutput = output.startsWith('*') ? output.substring(1) : output;
+        const pointsArray = trimmedOutput.split('\n* ');
+        let numberedListHTML = "<ol>";
 
-        if (sectionTitle.endsWith(':')) { 
-            sectionTitle = sectionTitle.slice(0, -1);
+        pointsArray.forEach((point) => {
+            // Check if the string contains ':' to split correctly
+            if (point.includes(': ')) {
+            let [title, description] = point.split(': ');
+            numberedListHTML += `<li><strong>${title.trim()}</strong>: ${description.trim()}</li>`;
+            } else {
+            numberedListHTML += `<li>${point.trim()}</li>`;
         }
+        });
 
-        
-        for (let line of sectionLines) {
-            if (line.trim()) {
-                items.push(line); 
-            }
-        }
-    }
+        numberedListHTML += "</ol>";
 
-    let sectionHTML = `<h2>${sectionTitle}</h2>`; 
 
-   if (items.length > 0) {
-      sectionHTML += '<ul>';
-
-      for (let item of items) {
-          sectionHTML += `<li>${item}</li>`;
-      }
-
-      sectionHTML += '</ul>'; 
-   }
-
-        document.getElementById("comment").innerHTML = sectionHTML;
+        document.getElementById("comment").innerHTML = numberedListHTML;
     })
         .catch(error => {
         console.error('Error:', error);
