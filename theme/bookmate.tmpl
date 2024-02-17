@@ -13,6 +13,21 @@
 <meta name="twitter:image" content="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/profilePhotoDarshan.jpg" />
 <meta name="description" content="{{site.Description}}"/>
 <meta name="twitter:description" content="{{site.Description}}" />
+<style>
+    .custom-textarea {
+        border: 2px solid #333;
+        min-height: 150px;
+    }
+
+    .header-bar {
+        background-color: #c0ff03;
+        color: #333;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -49,23 +64,24 @@
             const data = {
                 "contents": [{
                 "parts": [
-                            {'text':  `Urgent Exam Prep - Prioritize Key Questions
-Task: Analyze CBSE Class ${studentClass}, ${studentSubject} Chapter ${studentChapterName} (input from the student) question patterns from the past 10 years to create a 'crash course' list of high-priority questions 
-for students with only 2 days remaining before the exam.
-Focus: Repetition is Key: Questions asked multiple times across past papers take top priority. 
-Concept Coverage: Ensure the question list collectively covers the core concepts tested within the chapter. Exam Day Format: Match the proportion of multiple-choice, short-answer, long-answer, and diagram-based questions typically seen on the exam.'Must-Know' 
-Definitions: Include questions directly asking for key definitions within the chapter.
+                            {'text':  `Prompt: Urgent Exam Prep - Prioritize Key Questions
+Task: Analyze CBSE Class ${studentClass}, [studentSubject] Chapter [studentChapterName] (input from the student) question patterns from the past 10 years to create a "crash course" list of high-priority questions for students with only 2 days remaining before the exam.
+Focus:
+Repetition is Key: Questions asked multiple times across past papers take top priority.
+Concept Coverage: Ensure the question list collectively covers the core concepts tested within the chapter.
+Exam Day Format: Match the proportion of multiple-choice, short-answer, long-answer, and diagram-based questions typically seen on the exam.
+"Must-Know" Definitions: Include questions directly asking for key definitions within the chapter.
 Method:
-Question Bank: Official CBSE website for released question papers (last 5 years): 'https://www.cbse.gov.in/cbsenew/question-paper.html'
+Question Bank: Official CBSE website for released question papers (last 5 years): "https://www.cbse.gov.in/cbsenew/question-paper.html"
 Frequency Analysis: Identify questions repeated 3 or more times. These automatically make the prioritized list.
 Concept Gaps: Check the core concepts of Chapter [ChapterName]. If those directly match any questions, add those even if frequency is lower.
 Balance Question Types: Aim to make the final output approximately match the percentage breakdown the CBSE exam usually has (e.g., 30% multiple choice, 40% short answers, etc.).
 Output:
-'Emergency Study List': A simple document with 8-15 questions that MUST be practiced. Indicate the question type and how many times it has appeared previously.
+"Emergency Study List": A simple document with 8-15 questions that MUST be practiced. Indicate the question type and how many times it has appeared previously.
 Concept Flashcards: Include a mini-deck of quick definitions or one-sentence explanations of core concepts likely to be tested.
 Additional Enhancements:
 Difficulty Indicator: If time allows, give questions a basic difficulty rating (Easy, Medium, Hard)
-'Do Not Skip' Warnings: Highlight any definition or concept-based questions that seem non-negotiable to know before the exam.`
+"Do Not Skip" Warnings: Highlight any definition or concept-based questions that seem non-negotiable to know before the exam.`
                 }]
                 }],
                 "safetySettings": [
@@ -94,8 +110,18 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
     })
         .then((response) => response.json())
         .then(data => {
-        
-        document.getElementById("comment").innerHTML = data.candidates[0].content.parts[0].text;
+        console.log(data.candidates[0].content.parts[0].text);
+        const output = data.candidates[0].content.parts[0].text;
+        const pointsArray = rawOutput.split('\n* ');
+        let numberedListHTML = "<ol>";
+
+        pointsArray.forEach((point) => {
+        let [title, description] = point.split(': ');
+        numberedListHTML += `<li><strong>${title}</strong> ${description}</li>`;
+        });
+
+        numberedListHTML += "</ol>";
+        document.getElementById("comment").innerHTML = numberedListHTMLl
     })
         .catch(error => {
         console.error('Error:', error);
@@ -126,13 +152,17 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
             <label for="chapter_name" class="f6 b db mb2">Chapter Name </label>
             <input id="chapter_name" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
 
-            <article class="center mw5 mw6-ns hidden ba mv4">
-            <h1 class="f4 bg-near-black white mv0 pv2 ph3">Question List *Imp*</h1>
-            <div class="pa3 bt">
-                <p class="f6 f5-ns lh-copy measure mv0" id="comment">
-                </p>
+            <div class="bg-white pa3 shadow-1">
+            <div class="header-bar">
+            <span>Question List</span>
+            <div>
+                <svg class="w1 h1" viewBox="0 0 24 24"><path d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,12,22Z"/></svg>
+                <svg class="w1 h1" viewBox="0 0 24 24"><path d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,12,22Z"/></svg>
+                <svg class="w1 h1" viewBox="0 0 24 24"><path d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,12,22Z"/></svg>
             </div>
-            </article>
+        </div>
+        <textarea class="custom-textarea w-100 mt2 pa2" id="comment" placeholder="Enter results here..."></textarea>
+    </div>
 
             <button onclick="getQuestions()">Submit</button>
         </form>
