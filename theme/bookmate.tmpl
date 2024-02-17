@@ -65,7 +65,7 @@
                 "contents": [{
                 "parts": [
                             {'text':  `Prompt: Urgent Exam Prep - Prioritize Key Questions
-Task: Analyze CBSE Class ${studentClass}, [studentSubject] Chapter [studentChapterName] (input from the student) question patterns from the past 10 years to create a "crash course" list of high-priority questions for students with only 2 days remaining before the exam.
+Task: Analyze CBSE Class ${studentClass}, ${studentSubject} Chapter ${studentChapterName} (input from the student) question patterns from the past 10 years to create a "crash course" list of high-priority questions for students with only 2 days remaining before the exam.
 Focus:
 Repetition is Key: Questions asked multiple times across past papers take top priority.
 Concept Coverage: Ensure the question list collectively covers the core concepts tested within the chapter.
@@ -110,6 +110,7 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
     })
         .then((response) => response.json())
         .then(data => {
+        console.log(data.candidates[0].content.parts[0].text);
         const output = data.candidates[0].content.parts[0].text;
         const pointsArray = output.split('\n* ');
         let numberedListHTML = "<ol>";
