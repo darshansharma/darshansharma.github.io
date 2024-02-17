@@ -112,18 +112,37 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
         .then(data => {
         console.log(data.candidates[0].content.parts[0].text);
         const output = data.candidates[0].content.parts[0].text;
-        const pointsArray = output.split('\n* ');
-        let numberedListHTML = "<ol>";
+        const sections = output.split('\n\n');
 
-        pointsArray.forEach((point) => {
-            let [title, description] = point.split(': ');
-            numberedListHTML += `<li><strong>${title}</strong> ${description}</li>`;
-        });
+    for (let i = 0; i < sections.length; i++) {
+        let sectionLines = sections[i].split('\n'); 
+        let sectionTitle = sectionLines.shift().trim();
 
-        numberedListHTML += "</ol>";
-        numberedListHTML.replace("undefined/gi", "");
+        if (sectionTitle.endsWith(':')) { 
+            sectionTitle = sectionTitle.slice(0, -1);
+        }
 
-        document.getElementById("comment").innerHTML = numberedListHTML;
+        let items = [];
+        for (let line of sectionLines) {
+            if (line.trim()) {
+                items.push(line); 
+            }
+        }
+    }
+
+    let sectionHTML = `<h2>${sectionTitle}</h2>`; 
+
+   if (items.length > 0) {
+      sectionHTML += '<ul>';
+
+      for (let item of items) {
+          sectionHTML += `<li>${item}</li>`;
+      }
+
+      sectionHTML += '</ul>'; 
+   }
+
+        document.getElementById("comment").innerHTML = sectionHTML;
     })
         .catch(error => {
         console.error('Error:', error);
