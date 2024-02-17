@@ -30,8 +30,8 @@
 <script>
   function getQuestions() {
         console.log("reached inside function");
-        const studentClass = document.getElementById("class").value;
-        const studentSubject = document.getElementById("subject").value;
+        const studentClass = document.getElementById("stu_class").value;
+        const studentSubject = document.getElementById("stu_subject").value;
         const studentChapterName = document.getElementById("chapter_name").value;
         const label1 = "QUl6YVN5QVZIM0";
         const label2 = "JudG9SbFNZSDdW";
@@ -116,14 +116,14 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
   <header class="tc pv2 pv3-ns">
 <article>
 <div>
-    <div class="ma1 w-90 pa3 mr1 hide-child pointer">
-        <form class="pa4 black-80" onsubmit="return false">
+    <div class="ma1 w-100 pa3 mr1 hide-child pointer">
+        <form class="pa4" onsubmit="return false">
             
-            <label for="name" class="f6 b db mb2">Class </label>
-            <input id="name" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
+            <label for="stu_class" class="f6 b db mb2">Class </label>
+            <input id="stu_class" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
 
-            <label for="subject" class="f6 b db mb2">Subject </label>
-            <input id="subject" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
+            <label for="stu_subject" class="f6 b db mb2">Subject </label>
+            <input id="stu_subject" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
 
             <label for="chapter_name" class="f6 b db mb2">Chapter Name </label>
             <input id="chapter_name" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
