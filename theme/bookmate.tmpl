@@ -117,7 +117,6 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
 
         pointsArray.forEach((point) => {
             let [title, description] = point.split(': ');
-            description.replace("undefined", "");
             numberedListHTML += `<li><strong>${title}</strong> ${description}</li>`;
         });
 
@@ -161,12 +160,11 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
             </div>
             <input id="chapter_name" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
 
-            <div class="bg-white pa3 shadow-1">
             <div class="header-bar">
                 <span>Question List</span>
             </div>
-        <code id="comment" placeholder="Result will appear here..."></code>
-    </div>
+            <code id="comment" placeholder="Result will appear here..."></code>
+
             <br />
             <a class="f6 link ph3 pv2 mb2 dib" onclick="getQuestions()">Submit</a>
         </form>
