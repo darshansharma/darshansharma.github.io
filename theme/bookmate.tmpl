@@ -114,6 +114,7 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
         const output = data.candidates[0].content.parts[0].text;
         const sections = output.split('\n\n');
         let sectionTitle = "Title";
+        let items = [];
     for (let i = 0; i < sections.length; i++) {
         let sectionLines = sections[i].split('\n'); 
         sectionTitle = sectionLines.shift().trim();
@@ -122,7 +123,7 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
             sectionTitle = sectionTitle.slice(0, -1);
         }
 
-        let items = [];
+        
         for (let line of sectionLines) {
             if (line.trim()) {
                 items.push(line); 
