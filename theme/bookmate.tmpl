@@ -29,6 +29,7 @@
 </script>
 <script>
   function getQuestions() {
+        console.log("reached inside function");
         const studentClass = document.getElementById("class").value;
         const studentSubject = document.getElementById("subject").value;
         const studentChapterName = document.getElementById("chapter_name").value;
@@ -44,6 +45,7 @@
             return;
         }
         try {
+            console.log("label - ", lb,url);
             const data = {
                 "contents": [{
                 "parts": [
@@ -114,17 +116,17 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
   <header class="tc pv2 pv3-ns">
 <article>
 <div>
-    <div class="ma1 w-30 pa3 mr1 hide-child pointer">
+    <div class="ma1 w-90 pa3 mr1 hide-child pointer">
         <form class="pa4 black-80" onsubmit="return false">
             
             <label for="name" class="f6 b db mb2">Class </label>
-            <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
+            <input id="name" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
 
             <label for="subject" class="f6 b db mb2">Subject </label>
-            <input id="subject" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
+            <input id="subject" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
 
             <label for="chapter_name" class="f6 b db mb2">Chapter Name </label>
-            <input id="chapter_name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
+            <input id="chapter_name" class=" ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc"><br>
 
             <label for="comment" class="f6 b db mb2">Emergency: Must Prepare</label>
             <textarea id="comment" name="comment" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" aria-describedby="comment-desc"></textarea>
