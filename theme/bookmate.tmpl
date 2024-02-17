@@ -113,10 +113,10 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
         console.log(data.candidates[0].content.parts[0].text);
         const output = data.candidates[0].content.parts[0].text;
         const sections = output.split('\n\n');
-
+        let sectionTitle = "Title";
     for (let i = 0; i < sections.length; i++) {
         let sectionLines = sections[i].split('\n'); 
-        let sectionTitle = sectionLines.shift().trim();
+        sectionTitle = sectionLines.shift().trim();
 
         if (sectionTitle.endsWith(':')) { 
             sectionTitle = sectionTitle.slice(0, -1);
