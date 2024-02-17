@@ -111,8 +111,17 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
         .then((response) => response.json())
         .then(data => {
         const output = data.candidates[0].content.parts[0].text;
+        const pointsArray = output.split('\n* ');
+        let numberedListHTML = "<ol>";
 
-        document.getElementById("comment").innerHTML = output;
+        pointsArray.forEach((point) => {
+            let [title, description] = point.split(': ');
+            numberedListHTML += `<li><strong>${title}</strong> ${description}</li>`;
+        });
+
+        numberedListHTML += "</ol>";
+
+        document.getElementById("comment").innerHTML = numberedListHTML;
     })
         .catch(error => {
         console.error('Error:', error);
