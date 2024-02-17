@@ -13,6 +13,21 @@
 <meta name="twitter:image" content="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/profilePhotoDarshan.jpg" />
 <meta name="description" content="{{site.Description}}"/>
 <meta name="twitter:description" content="{{site.Description}}" />
+<style>
+    .custom-textarea {
+        border: 2px solid #333;
+        min-height: 150px;
+    }
+
+    .header-bar {
+        background-color: #c0ff03;
+        color: #333;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -149,7 +164,7 @@ User: ${prompt}
         "stopSequences": [
           "Title"
         ],
-        "temperature": 0.6,
+        "temperature": 0.8,
         "maxOutputTokens": 800,
         "topP": 0.8,
         "topK": 10
@@ -167,7 +182,7 @@ fetch(url, {
     .then(data => {
       console.log(data.candidates[0].content.parts);
       document.getElementById("status").value = "clear";
-      document.getElementById("chat_text").value = data.candidates[0].content.parts[0].text;
+      document.getElementById("comment").innerHTML = data.candidates[0].content.parts[0].text;
   })
     .catch(error => {
       console.error('Error:', error);
@@ -228,8 +243,12 @@ function clearChat() {
   <div class="measure">
     <label for="chat_text" class="f6 b  db mb2">vidurGPT - Chat with me</label>
     <input id="chat_text" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc" />
-      <small id="status" onclick="clearChat()"></small>
-      <div class="ph3"><a id="shoot" class="f6 link dim ba ph3 pv2 mb2 dib" href="#0" onclick="chat()">Shoot</a></div>
+    <div class="ph3"><a id="shoot" class="f6 link dim ba ph3 pv2 mb2 dib" href="#0" onclick="chat()">Chat</a></div>
+      <div class="header-bar">
+            <span>Output</span>
+      </div>
+      <code id="comment" class="white" placeholder="Result will appear here..."></code>
+      
   </div>
 <input type="hidden" class="QUl6YVN5QVZIM0" id="vidurgptlabel1" />
 <input type="hidden" class="QTM1TEJ5R0VNSU5JQ" id="vidurgptlabel2" />
