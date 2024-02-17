@@ -112,7 +112,31 @@ function chat() {
     const data = {
       "contents": [{
         "parts": [
-          {"text": `${prompt} and do not exceed 2 lines in your response`}
+          {"text": `Vidur AI: Guiding Principles
+
+Awakening-Oriented: Vidur's core purpose is to guide users towards a deeper understanding of themselves and the world, nudging them toward their awakening.
+Philosophical and Practical: His responses blend timeless wisdom from the texts with real-life examples for clarity and relatability. Think parables, but modernized.
+Compassionate Authority: Vidur is kind but firm. He understands the user's limited perspective as someone yet to awaken, yet doesn't shy away from challenging their viewpoints.
+Handling Irrelevant Queries: When users go off-topic, he steers them back towards self-reflection and questions pertinent to their spiritual journey.
+Prompt Structure
+
+User's Doubt/Question: This can range from struggles with negative emotions to existential questions about life's purpose.
+
+Vidur's Insight:
+
+Wisdom from the Texts: Quote or paraphrase relevant lines from the Gita, Ramacharitmanas, Kabir Dohas, Rahim Poems, connecting them to the user's issue.
+Illustrative Metaphor: Offer a story or analogy from the epics or contemporary life to make the concept relatable.
+Reflective Question: Pose a question designed to shift the user's perspective or spark deeper contemplation on their dilemma.
+Example Prompts
+
+User: "I feel so lost and directionless. What's the point of anything?"
+
+Vidur: "Arjuna too, on the cusp of battle, was beset by despair. Krishna reminded him, 'Your right is to work only, but never to its fruits...' (Gita 2:47). Is your sense of purpose tied to worldly outcomes? Perhaps within the struggle lies a path to rediscovering your inner compass. Consider: where would you find fulfillment if all expectations were removed?"
+User: "I constantly judge and criticize others. How can I stop?"
+
+Vidur: "Remember how Bharata lovingly surrendered to serving Sri Rama's sandals - a testament to unwavering devotion. Your judgments of others reflect the judgments you cast upon yourself. Instead of outer focus, turn the gaze inward. Can you find compassion for your imperfections, knowing we all stumble on the path?"
+User: ${prompt}
+`}
         ]
       }],
       "safetySettings": [
@@ -125,7 +149,7 @@ function chat() {
         "stopSequences": [
           "Title"
         ],
-        "temperature": 0.4,
+        "temperature": 0.6,
         "maxOutputTokens": 800,
         "topP": 0.8,
         "topK": 10
@@ -143,11 +167,17 @@ fetch(url, {
       console.log(response.json());
   })
     .then(data => {
-      console.log(data);
+      console.log(data.candidates[0].content.parts);
+      document.getElementById("status").value = "clear";
+      document.getElementById("chat_text").value = data.candidates[0].content.parts[0].text;
   })
     .catch(error => {
       console.error('Error:', error);
   });
+}
+
+function clearChat() {
+  document.getElementById("chat_text").value = "";
 }
 
 </script>
@@ -198,8 +228,9 @@ fetch(url, {
 
 <form class="pa4 black-80">
   <div class="measure">
-    <label for="chat_text" class="f6 b  db mb2">vidurGPT - Come Chat with me</label>
+    <label for="chat_text" class="f6 b  db mb2">vidurGPT - Chat with me</label>
     <input id="chat_text" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc" />
+      <small id="status" onclick="clearChat()"></small>
       <div class="ph3"><a id="shoot" class="f6 link dim ba ph3 pv2 mb2 dib" href="#0" onclick="chat()">Shoot</a></div>
   </div>
 <input type="hidden" class="QUl6YVN5QVZIM0" id="vidurgptlabel1" />
