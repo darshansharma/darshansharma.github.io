@@ -37,8 +37,8 @@
         const label2 = "JudG9SbFNZSDdW";
         const label3 = "QTM1TEJ5R0VNSU5JQ";
         const label4 = "zcxbkUzU3NtVlR3";
-        const label = label1+label2+label3+label4;
-        const lb = atob(label.replace(/GEMINI/gi, ''));
+        let label = label1+label2+label3+label4;
+        const lb = atob(label).replace(/GEMINI/gi, '');
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${lb}`;
         if(studentChapterName === "" || studentClass === "" || studentSubject === "") {
             alert("Please Provide all the fields before submitting");
