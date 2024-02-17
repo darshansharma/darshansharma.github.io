@@ -112,7 +112,7 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
         .then(data => {
         const output = data.candidates[0].content.parts[0].text;
 
-        document.getElementById("comment").value = output;
+        document.getElementById("comment").innerHTML = output;
     })
         .catch(error => {
         console.error('Error:', error);
@@ -152,7 +152,7 @@ Difficulty Indicator: If time allows, give questions a basic difficulty rating (
                 <svg class="w1 h1" viewBox="0 0 24 24"><path d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,12,22Z"/></svg>
             </div>
         </div>
-        <code class="custom-textarea w-100 mt2 pa2" id="comment" placeholder="Result will appear here..."></code>
+        <code id="comment" placeholder="Result will appear here..."></code>
     </div>
             <br />
             <a class="f6 link ph3 pv2 mb2 dib" onclick="getQuestions()">Submit</a>
