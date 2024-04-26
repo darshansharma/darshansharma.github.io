@@ -4,13 +4,13 @@ slug="master-the-art-of-cv-making"
 excerpt="It is a myth that if you are from tier-2/3 college big product based companies will not consider you"
 tags=["Resume", "CV", "Resume-Making", "art"]
 type="post"
-publish_at="27 Apr 2024 12:00 IST"
-featured_image="https://json.commudle.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMTAxQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--545fe12997966d05b0305619f3e77560673d0b95/google-approached-me.png"
+publish_at="26 Apr 2024 9:10 IST"
+featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/google-recruiter-email.png"
 ---
 Your CV lists out your professionalism and competition is increased after the invention of ChatGPT -  
 It is a myth that if you are from tier-2/3 college big product based companies will not consider you - I am living example of how Google recruiter approached me -
 
-![](https://json.commudle.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMTAxQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--545fe12997966d05b0305619f3e77560673d0b95/google-approached-me.png)
+![Google-recruiter-email](https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/google-recruiter-email.png)
 
 Create your resume to show your skills, experience and talent. Additionally, it's essential to infuse your CV with a distinctive factor that sets you apart. Here are some tips to enhance your resume:
 
@@ -47,7 +47,7 @@ Those adept at crafting effective prompts will be able to harness the full poten
 ## Remove Pictures
 Eliminate any photographs, emblems, or visual elements, as they hold no bearing on showcasing your professional trajectory. I've witnessed individuals, particularly those belonging to the Gen-Z cohort, attempting to craft visually appealing resumes - your meticulously designed resume adorned with borders and embellishments serves no purpose if it fails to reach the recruiters' hands and is filtered out by the Applicant Tracking Systems (ATS), which discard most CVs like this.  
   
-![](https://json.commudle.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMTQxQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a7bc0591bd9bc757fb327d5513b4157d5034e907/Img1.png)
+![person-reading-cv](https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/person-reading-c.jpeg)
 
 
 ## Bullet Points
