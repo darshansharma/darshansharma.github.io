@@ -4,7 +4,7 @@ slug="master-the-art-of-cv-making"
 excerpt="It is a myth that if you are from tier-2/3 college big product based companies will not consider you"
 tags=["Resume", "CV", "Resume-Making", "art"]
 type="post"
-publish_at="26 Apr 2024 9:10 IST"
+publish_at="26 Apr 2024 9:00 IST"
 featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/google-recruiter-email.png"
 ---
 Your CV lists out your professionalism and competition is increased after the invention of ChatGPT -  

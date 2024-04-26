@@ -1,6 +1,6 @@
 ---
-title="Why-7-Eleven-Fire-me"
-slug="why-7-Eleven-Fire-me"
+title="Why Did 7-Eleven Fire me?"
+slug="why-did-7-Eleven-Fire-me"
 excerpt="A great leader prioritizes their employees over their own achievements, understanding that their success lies in their employees's success."
 tags=["life", "software", "company-experience", "7-Eleven"]
 type="post"
