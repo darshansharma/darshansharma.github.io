@@ -10,9 +10,7 @@ featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/darshan
 
 ### From Underdogs to Champions: The Power of the Right Influence
 
-Xabi Alonso has taken Bayern Leverkusen from 17th place to the top of the table with an impressive 49 matches undefeated, setting new records. Similarly, Bielsa led Leeds United to enter the Premier League after a 16-year gap in 2021, defeating the formidable Manchester City.
-
-It is very sad to say that the thing which leads us to here (everyone being unique) is the same thing that may be the reason for the extinction of all life forms on earth. Even if we unite and form allegiance, there will be some countries or groups of people who will go against the majority.
+Xabi Alonso has taken Bayern Leverkusen from 17th place to the top of the table with an impressive 49 matches undefeated, setting new records. Similarly, Bielsa led Leeds United to enter the Premier League after a 16-year gap in 2021, they even defeated the almighty oil team of Manchester City.
 
 Consider Elon Musk. When he fires employees, his companies continue to thrive, but when others follow same, they often fail. Musk has a unique trait of influencing people and transforming underdogs into lions.
 
