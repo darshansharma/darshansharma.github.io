@@ -12,15 +12,13 @@ I was sitting in a park near to my home while listening to some music and watchi
 
 **Why not?
 
-That voice from inside from me then showed me a snapshot of when I was of the same age and was playing football and what happened with me back then. It’s so sad and tears filled inside my eyes when all of sudden I was presented that snapshot of my past. Back then when I was a kid I had to go through a lot harder situation than this (no it’s not you regular hard). And I was filled with rage, frustation, ego issues back then which are still working and influencing my life a lot from the deep down of ocean of emotions/thoughts. I have to forgive them first before I can forgive myself.I would be lying if I say that I have forgiven them. It’s a lot harder than saying and it will take time but then again I have my whole life left and I don’t feel the need to rush anymore.
+That voice from inside from me then showed me a snapshot of when I was of the same age and was playing football and what happened with me back then. It’s so sad and tears filled inside my eyes when all of sudden I was presented that snapshot of my past. Back then when I was a kid I had to go through a lot harder situation than this. And I was filled with rage, frustation, ego issues back then which are still working and influencing my life a lot from the deep down.
 
 > **Sometimes, what we try to avoid lead us to very same place we are trying to avoid.**
 
 You must be thinking that I must be a wicked in thinking that people should go through what I had gone through. But again, what might be right for some, may be very wrong for other, what maybe sacred for one, maybe evil for somone other. Keeping this in mind, I am about to tell you what I learned by looking at those kids fighting with each other — I must forgive those who had opressed me back when I was a kid, I must forgive those who thought that what was right from their point of view and hadn’t thought about that same thing might be evil for me. But today I realize that the definition of what is evil, and what is sacred, pure, impure, right, wrong (add even time(as proved be Einstein)) are all relative things. And relative things must not impact human beings that much. But that is an absurd statement for as long as their is life, their will be relativity and so are rights, wrongs….
 
 > Sometimes, the best things take place when we don’t interfere with nature. Nature will come and teach you if you try to remain patient and curious enough to explore.
-
-If my what I thought would’be friends back then hadn’t done those bad (again relative) things and the childhood trauma I experienced back then— I would have not got this gift of curiosity (this is what I think the positive outcome resulted from that snapshot), which had helped me so much in life. I don’t know how this gift of curiosity took birth inside of me but it must be the then factors, enviroment, timing, gentics, problems and maybe many more things which must have produced it to make me sane.
 
 > **A box full of darkness, is a gift too.**
 
