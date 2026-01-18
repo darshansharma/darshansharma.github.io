@@ -161,9 +161,9 @@ fetch(url, {
   })
     .then((response) => response.json())
     .then(data => {
-      console.log(data.candidates[0].content.parts);
+      console.log(data.reply);
       document.getElementById("status").value = "clear";
-      document.getElementById("comment").innerHTML = data.candidates[0].content.parts[0].text;
+      document.getElementById("comment").innerHTML = data.reply;
   })
     .catch(error => {
       console.error('Error:', error);
