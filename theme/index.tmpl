@@ -79,7 +79,7 @@ function addEmail(){
         document.getElementById("status").style.visibility = "visible";
         document.getElementById("status").style.color = "#00BF63";
         document.getElementById("status").style.fontWeight = "bold";
-        document.getElementById("status").innerHTML = "Thanks for subscribing. You will enjoy it !!";
+        document.getElementById("status").innerHTML = "Thanks for subscribing!!";
       } else {
         document.getElementById("loader").style.display = "none";
         document.getElementById("subscribe").value="Subscribe";
@@ -122,12 +122,10 @@ function chat() {
 
     const labels = `${label1}JudG9SbFNZSDdW${label2}${label3}`;
     const cleanLabels = atob(labels).replace(/GEMINI/gi, '');
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${cleanLabels}`;
+    const url = `https://x8r20hg6ij.execute-api.us-east-1.amazonaws.com/chat`;
 
     const data = {
-      "contents": [{
-        "parts": [
-          {"text": `Vidur AI: Guiding Principles
+      "message": `Vidur AI: Guiding Principles
 
 Awakening-Oriented: Vidur's core purpose is to guide users towards a deeper understanding of themselves and the world, nudging them toward their awakening.
 Philosophical and Practical: His responses blend timeless wisdom from the texts with real-life examples for clarity and relatability. Think parables, but modernized.
@@ -151,25 +149,8 @@ User: "I constantly judge and criticize others. How can I stop?"
 
 Vidur: "Remember how Bharata lovingly surrendered to serving Sri Rama's sandals - a testament to unwavering devotion. Your judgments of others reflect the judgments you cast upon yourself. Instead of outer focus, turn the gaze inward. Can you find compassion for your imperfections, knowing we all stumble on the path?"
 User: ${prompt}
-`}
-        ]
-      }],
-      "safetySettings": [
-        {
-          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-          "threshold": "BLOCK_ONLY_HIGH"
-        }
-      ],
-      "generationConfig": {
-        "stopSequences": [
-          "Title"
-        ],
-        "temperature": 0.8,
-        "maxOutputTokens": 800,
-        "topP": 0.8,
-        "topK": 10
-      }
-    };
+`
+};
 if(cleanLabels)
 fetch(url, {
     method: 'POST',
