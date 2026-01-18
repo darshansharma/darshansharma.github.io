@@ -39,7 +39,7 @@ jobs:
       - name: Building the artifact
         run: chmod +x blog && ./blog && ls
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v6
+        uses: actions/upload-pages-artifact@v4
         with:
           # Upload entire repository
           path: 'public/'
