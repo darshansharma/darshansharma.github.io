@@ -78,7 +78,7 @@ English Translation: Even those who are considered the most immoral of all sinne
   <img align="left" alt="Darshan's X" width="30px" src="assets/twitter-logo.png" />&nbsp;&nbsp;twitter
 </a>
 <br><br>
-<a href="https://www.youtube.com/@darshansharma_/">
+<a href="https://www.youtube.com/@usualrise1/">
   <img align="left" alt="Darshan's Youtube" width="30px" src="assets/youtube-logo.png" />&nbsp;&nbsp;YouTube
 </a>
 <br><br>
