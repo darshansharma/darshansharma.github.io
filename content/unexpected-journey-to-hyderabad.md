@@ -33,7 +33,7 @@ Jahangir's Hospitality & Guidance
 
 ## Contrasting Environments: South vs. NCR
 
-As I immersed myself in the vibrant culture of Hyderabad, I couldn't help but notice stark differences between the south region and the National Capital Region (NCR). The contrasting attitudes towards strangers, civic sense, and [corruption levels painted a striking picture of societal norms](https://darshan.sh/tricity-to-ncr/).
+As I immersed myself in the vibrant culture of Hyderabad, I couldn't help but notice stark differences between the south region and the National Capital Region (NCR). The contrasting attitudes towards strangers, civic sense, and [corruption levels painted a striking picture of societal norms](https://darshansharma.xyz/tricity-to-ncr/).
 
 * Cultural Acceptance in Hyderabad
     * Despite being an outsider, the people of Hyderabad embraced me with open arms, making me feel like a part of their community. 

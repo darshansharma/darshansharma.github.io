@@ -8,7 +8,7 @@ publish_at="28 Jul 2022 12:00 IST"
 featured_image="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/zomato-boy-funny.jpg"
 ---
 
- It’s 6:39 PM here. I just came home from gym. [darshan.sh](https://darshan.sh) my website is down because of some firestore code which I changed earlier today. I think 40 or 50 chrome tabs are still open which consist of the research/blog posts I am doing right now but since I am using a m1 machine so I no longer feel that I need to close them to write this post. 
+ It’s 6:39 PM here. I just came home from gym. [darshansharma.xyz](https://darshansharma.xyz) my website is down because of some firestore code which I changed earlier today. I think 40 or 50 chrome tabs are still open which consist of the research/blog posts I am doing right now but since I am using a m1 machine so I no longer feel that I need to close them to write this post. 
  
  > Someone asked me today,  **why do you write?**  Isn’t there enough dirt already on internet?
  

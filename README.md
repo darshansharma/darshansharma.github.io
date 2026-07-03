@@ -1,4 +1,4 @@
-### Hi there 👋 I am [Darshan Sharma](https://darshan.sh)
+### Hi there 👋 I am [Darshan Sharma](https://darshansharma.xyz)
 <br>
 
 ## About me
@@ -8,7 +8,7 @@
 ---
 name: darshan sharma
 handle: darshansharma_
-website: darshan.sh
+website: darshansharma.xyz
 ---
 ```
 
@@ -86,7 +86,7 @@ English Translation: Even those who are considered the most immoral of all sinne
   <img align="left" alt="Darshan's Leetcode" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/leetcode.svg" />&nbsp;&nbsp;LeetCode
 </a>
 <br><br>
-<a href="https://darshan.sh">
+<a href="https://darshansharma.xyz">
   <img align="left" alt="Darshan's Home" width="30px" src="https://dars-portfolio.s3.us-west-2.amazonaws.com/Images/favicon.png"/>&nbsp;&nbsp;Let's have a cup of tea at home
 </a>
 
